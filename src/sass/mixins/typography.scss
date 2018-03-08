@@ -1,0 +1,51 @@
+@import '../config/sizes';
+@import '../mixins/screen';
+
+$font:              'Lora', 'sans-serif';
+$font-sec:          'sans-serif', 'Arial';
+
+$weight-light:      200;
+$weight-normal:     400;
+$weight-semi-bold:  500;
+$weight-bold:       700;
+
+// H(eadings)
+@mixin style-heading {
+    font-family: $font;
+    font-size: 1.1rem;
+    font-weight: $weight-light;
+
+    @include screen($screen-minimal) {
+        font-size: 1.4rem;
+    }
+
+    @include screen($screen-simple) {
+        font-size: 2rem;
+    }
+
+    @include screen($screen-normal) {
+        font-size: 2.5rem;
+    }
+
+    @include screen($screen-large) {
+        font-size: 2.9rem;
+    }
+}
+
+// P(aragraph)
+@mixin style-regular {
+    color: $c-white;
+    font-family: $font-sec;
+    font-size: .8rem;
+    font-weight: $weight-normal;
+    line-height: 1.1;
+
+    @include screen($screen-minimal) {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+
+    @include screen($screen-normal) {
+        font-size: 1.2rem;
+    }
+}
