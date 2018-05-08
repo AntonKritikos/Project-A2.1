@@ -1,0 +1,27 @@
+.button {
+    background: $c-prim;
+    padding: .5rem 1rem;
+    width: 100%;
+
+    &--blue {
+        background: $c-second;
+    }
+
+    &--arrow {
+        &::after {
+            border-bottom: 60px solid transparent;
+            border-left: 60px solid $c-prim;
+            border-top: 60px solid transparent;
+            content: '';
+            display: inline-block;
+            height: 0;
+            right: 0;
+            position: absolute;
+            width: 0;
+        }
+
+        .button--blue {
+            border-left: 60px solid $c-second;
+        }
+    }
+}

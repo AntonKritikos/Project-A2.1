@@ -1,0 +1,22 @@
+.icon {
+    max-height: 100%;
+    max-width: 100%;
+
+    &--mobile {
+        display: block;
+    }
+
+    &--desktop {
+        display: none;
+    }
+
+    @include screen($screen-simple) {
+        &--mobile {
+            display: none;
+        }
+
+        &--desktop {
+            display: block;
+        }
+    }
+}

@@ -8,6 +8,7 @@ const twig          = require("./gulp/twig");
 const serve         = require("./gulp/serve");
 const clean         = require("./gulp/clean");
 const favicons      = require("./gulp/favicons");
+const fonts      = require("./gulp/fonts");
 
 gulp.task("default", gulp.series(
     clean.clean,
@@ -22,6 +23,9 @@ gulp.task("default", gulp.series(
         javascript.compileLib,
         svg.generateIcons,
         copy.copyDist
+    ),
+    gulp.parallel(
+        fonts.generateFonts
     ),
     gulp.parallel(
         twig.buildTwig

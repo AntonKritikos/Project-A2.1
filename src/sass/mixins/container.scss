@@ -2,12 +2,10 @@
 @import '../mixins/screen';
 
 @mixin container {
-    margin: 0 auto;
-    max-width: $screen-normal;
-    padding: 0 1.25rem;
+    padding: 0 1.5rem;
     width: 100%;
 
     @include screen($screen-simple) {
-        padding: 0 1.8rem;
+        padding: 0 2rem;
     }
 }

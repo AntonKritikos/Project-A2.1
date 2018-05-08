@@ -4,7 +4,7 @@ const gulp      = require("gulp");
 const twig      = require('gulp-twig');
 
 function buildTwig() {
-    return gulp.src(paths.src.twig + "pages/*.twig")
+    return gulp.src(paths.src.twig + "templates/*.twig")
         .pipe(twig({defaults: { cache: false }}))
         .pipe(gulp.dest('./dist/'))
 }

@@ -1,0 +1,64 @@
+@import '../mixins/typography';
+@import '../mixins/container';
+
+.header {
+    @include container;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2), rgba(0, 0, 0, .7)),
+    url('../img/header_background.jpg') 80% 50% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+
+    &__content {
+        @include screen($screen-simple) {
+            text-align: center;
+        }
+    }
+
+    .is-visible {
+        .header__title {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .header__subtitle {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    &__title {
+        @include style-heading;
+        margin: 0 0 .2rem;
+        opacity: 0;
+        text-shadow: 0 2px 1px transparentize($c-black, .8);
+        transform: translateY(-25%);
+        transition: transform .25s, opacity .25s;
+    }
+
+    &__subtitle {
+        @include style-regular;
+        opacity: 0;
+        text-shadow: 0 2px 1px transparentize($c-black, .8);
+        transform: translateY(-25%);
+        transition: transform .25s, opacity .25s;
+        transition-delay: .3s;
+    }
+
+    &__icon {
+        bottom: 1.5rem;
+        height: 50px;
+        left: 1.5rem;
+        position: absolute;
+        width: 100px;
+
+        @include screen($screen-simple) {
+            margin: 0 auto;
+            left: auto;
+        }
+    }
+}

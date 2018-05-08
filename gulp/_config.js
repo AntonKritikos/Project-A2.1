@@ -5,6 +5,7 @@ const paths = {
         scripts: "./src/js/",
         styles: "./src/sass/",
         favicons: "./src/static/favicons/",
+        fonts: "./src/fonts/",
         icons: "./src/icons/",
         static: "./src/static/",
         vendor: "./node_modules/"
@@ -17,7 +18,8 @@ const paths = {
             scripts: "./dist/assets/js/",
             static: "./dist/assets/",
             img: "./dist/assets/img",
-            favicons: "./dist/assets/favicons/"
+            favicons: "./dist/assets/favicons/",
+            fonts: "./dist/assets/fonts"
         }
     }
 };
