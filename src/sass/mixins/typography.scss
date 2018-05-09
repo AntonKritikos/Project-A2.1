@@ -54,3 +54,18 @@ $weight-bold:       700;
         font-size: 2.4rem;
     }
 }
+
+@mixin style-button {
+    font-family: $font;
+    font-size: 1.4rem;
+    font-weight: $weight-normal;
+    line-height: 1;
+
+    @include screen($screen-simple) {
+        font-size: 1.6rem;
+    }
+
+    @include screen($screen-normal) {
+        font-size: 1.8rem;
+    }
+}

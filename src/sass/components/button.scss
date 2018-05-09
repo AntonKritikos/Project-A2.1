@@ -1,22 +1,43 @@
+@import '../mixins/typography';
+
 .button {
+    @include style-button;
     background: $c-prim;
-    padding: .5rem 1rem;
+    border: 1px solid $c-prim;
+    color: $c-white;
+    padding: 1rem 4rem;
+    text-align: center;
+    transition: .25s background, .25s color;
     width: 100%;
+
+    &:hover {
+        background: $c-white;
+        color: $c-prim;
+    }
 
     &--blue {
         background: $c-second;
+        border: 1px solid $c-second;
+
+        &:hover {
+            background: $c-white;
+            color: $c-second;
+        }
     }
 
     &--arrow {
+        max-width: 300px;
+
         &::after {
-            border-bottom: 60px solid transparent;
-            border-left: 60px solid $c-prim;
-            border-top: 60px solid transparent;
+            border-bottom: 30px solid transparent;
+            border-left: 30px solid $c-prim;
+            border-top: 30px solid transparent;
             content: '';
             display: inline-block;
             height: 0;
+            top: 50%;
+            transform: translateY(-50%);
             position: absolute;
-            right: 0;
             width: 0;
         }
 
