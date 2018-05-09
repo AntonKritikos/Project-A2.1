@@ -6,7 +6,7 @@
     src: url('../fonts/husans-normal-webfont.woff');
 }
 
-$font:              'HuFont', 'Avenir', 'Arial', 'sans-serif';
+$font-prim:         'HuFont', 'Avenir', 'Arial', 'sans-serif';
 $font-sec:          'Avenir', 'Arial', 'sans-serif';
 
 $weight-light:      200;
@@ -16,7 +16,7 @@ $weight-bold:       700;
 
 // H(eadings)
 @mixin style-heading {
-    font-family: $font;
+    font-family: $font-prim;
     font-size: 3rem;
     font-weight: $weight-normal;
     line-height: 1.2;
@@ -56,7 +56,7 @@ $weight-bold:       700;
 }
 
 @mixin style-button {
-    font-family: $font;
+    font-family: $font-prim;
     font-size: 1.4rem;
     font-weight: $weight-normal;
     line-height: 1;
@@ -67,5 +67,20 @@ $weight-bold:       700;
 
     @include screen($screen-normal) {
         font-size: 1.8rem;
+    }
+}
+
+@mixin style-button-small {
+    font-family: $font-sec;
+    font-size: .8rem;
+    font-weight: $weight-normal;
+    line-height: 1;
+
+    @include screen($screen-simple) {
+        font-size: 1rem;
+    }
+
+    @include screen($screen-normal) {
+        font-size: 1.2rem;
     }
 }

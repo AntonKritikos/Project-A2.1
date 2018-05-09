@@ -1,18 +1,29 @@
 @import '../mixins/typography';
 
 .button {
-    @include style-button;
+    display: block;
     background: $c-prim;
     border: 1px solid $c-prim;
     color: $c-white;
     padding: 1rem 4rem;
+    margin: 1rem;
     text-align: center;
     transition: .25s background, .25s color;
+    position: relative;
     width: 100%;
 
     &:hover {
         background: $c-white;
         color: $c-prim;
+    }
+
+    &__text {
+        @include style-button;
+        display: block;
+
+        &--small {
+            @include style-button-small;
+        }
     }
 
     &--blue {
@@ -29,20 +40,42 @@
         max-width: 300px;
 
         &::after {
-            border-bottom: 30px solid transparent;
-            border-left: 30px solid $c-prim;
-            border-top: 30px solid transparent;
+            border-bottom: 31px solid transparent;
+            border-left: 31px solid $c-prim;
+            border-top: 31px solid transparent;
             content: '';
             display: inline-block;
             height: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            right: -32px;
+            top: -1px;
             position: absolute;
             width: 0;
         }
 
         .button--blue {
-            border-left: 60px solid $c-second;
+            border-left: 30px solid $c-second;
+        }
+    }
+
+    &--icon {
+        padding: 1rem;
+        width: auto;
+
+        .button__icon {
+            @include style-button;
+            display: block;
+            margin: 0 0 .4rem;
+        }
+    }
+
+    &--big {
+        text-align: left;
+        padding: 1rem;
+        max-width: 200px;
+        width: auto;
+
+        .button__text {
+            margin: 0 0 .4rem;
         }
     }
 }
