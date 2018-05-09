@@ -1,0 +1,77 @@
+.scroll-btn {
+    display: block;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    transition: .25s opacity;
+    transition-delay: .5s;
+
+    span {
+        margin-left: -55px;
+    }
+}
+
+.scroll-btn.active {
+    opacity: 1;
+}
+
+.scroll-btn > * {
+    color: $c-white;
+    display: inline-block;
+}
+
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+    opacity: .8;
+}
+
+.scroll-btn .mouse {
+    border: 3px solid $c-white;
+    border-radius: 23px;
+    box-sizing: border-box;
+    display: block;
+    height: 55px;
+    margin: 0 auto;
+    position: relative;
+    width: 35px;
+}
+
+.scroll-btn .mouse > * {
+    animation: mouse 2s linear infinite;
+    animation-delay: 1s;
+    background: $c-white;
+    border-radius: 50%;
+    display: block;
+    height: 8px;
+    left: 50%;
+    margin: -4px 0 0 -4px;
+    position: absolute;
+    top: 29%;
+    width: 8px;
+}
+
+@keyframes mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
