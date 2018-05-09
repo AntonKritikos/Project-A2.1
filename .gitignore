@@ -3,6 +3,9 @@ logs
 *.log
 npm-debug.log*
 
+# Build path
+dist/
+
 # Dependency directories
 node_modules/
 
@@ -11,3 +14,6 @@ node_modules/
 
 # Package lock file
 package-lock.json
+
+# Workspace
+.idea/
