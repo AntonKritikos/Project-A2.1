@@ -11,6 +11,7 @@
     transition: .25s background, .25s color;
     position: relative;
     width: 100%;
+    z-index: 2;
 
     &:hover {
         background: $c-white;
@@ -37,23 +38,33 @@
     }
 
     &--arrow {
+        border-right: none;
         max-width: 300px;
 
         &::after {
-            border-bottom: 31px solid transparent;
-            border-left: 31px solid $c-prim;
-            border-top: 31px solid transparent;
+            background: inherit;
+            border: 1px solid $c-prim;
+            border-bottom: none;
+            border-left: none;
             content: '';
             display: inline-block;
-            height: 0;
-            right: -32px;
-            top: -1px;
+            height: 44px;
             position: absolute;
-            width: 0;
+            right: 0;
+            top: 50%;
+            transform: rotate(45deg) translateY(-65%);
+            width: 44px;
+            z-index: -1;
         }
 
         .button--blue {
             border-left: 30px solid $c-second;
+
+            .button--arrow {
+                &::after {
+                    border: 1px solid $c-second;
+                }
+            }
         }
     }
 
