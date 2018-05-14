@@ -16,4 +16,5 @@ node_modules/
 package-lock.json
 
 # Workspace
+.idea/workspace.xml
 .idea/
