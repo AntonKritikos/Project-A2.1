@@ -1,1 +1,0 @@
-{"version":3,"sources":["app.js"],"names":["window","setTimeout","$","addClass"],"mappings":"aAAAA,OAAOC,WAAW,WACdC,EAAE,oBAAoBC,SAAS,eADnCH","file":"app.js","sourcesContent":["window.setTimeout(function () {\n    $('.header__content').addClass('is-visible');\n}, 250);\n\n"]}
