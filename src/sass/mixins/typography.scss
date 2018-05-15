@@ -34,24 +34,39 @@ $weight-bold:       700;
     }
 }
 
+@mixin style-heading-second {
+    font-family: $font-prim;
+    font-size: 1.75rem;
+    font-weight: $weight-normal;
+    line-height: 1.2;
+
+    @include screen($screen-simple) {
+        font-size: 2rem;
+    }
+
+    @include screen($screen-normal) {
+        font-size: 2.4rem;
+    }
+
+    @include screen($screen-large) {
+        font-size: 3rem;
+    }
+}
+
 // P(aragraph)
 @mixin style-regular {
     color: $c-white;
     font-family: $font-sec;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: $weight-normal;
     line-height: 1.4;
 
     @include screen($screen-simple) {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     @include screen($screen-normal) {
-        font-size: 2.2rem;
-    }
-
-    @include screen($screen-large) {
-        font-size: 2.4rem;
+        font-size: 1.4rem;
     }
 }
 

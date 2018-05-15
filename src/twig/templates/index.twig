@@ -12,8 +12,12 @@
             <div class="site__content">
                 {% block content %}
                     {% include '../partials/header.twig' %}
-                    {% include '../partials/footer.twig' %}
+                    {#{% include '../pages/home.twig' %}#}
                 {% endblock %}
+            </div>
+
+            <div class="site__footer">
+                {% include '../partials/footer.twig' %}
             </div>
 
             {% block js %}

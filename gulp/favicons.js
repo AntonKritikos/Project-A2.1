@@ -8,8 +8,8 @@ function generateFavicons() {
         .pipe(favicons({
                 appName:        favicon.name,
                 appDescription: favicon.description,
-                developerName:  "",
-                developerURL:   "",
+                developerName:  "Idris Dopico Peña",
+                developerURL:   "idrisdopico.nl",
                 background:     favicon.background,
                 url:            favicon.url,
                 display:        "browser",

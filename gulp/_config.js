@@ -43,10 +43,10 @@ const clean = [
 ];
 
 const favicon = {
-    name:           "",
-    description:    "",
+    name:           "Hogeschool Utrecht",
+    description:    "Campagne",
     background:     "#FFF",
-    url:            ""
+    url:            "https://www.hu.nl/"
 };
 
 exports.paths   = paths;

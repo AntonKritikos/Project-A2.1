@@ -28,6 +28,9 @@ gulp.task("default", gulp.series(
         fonts.generateFonts
     ),
     gulp.parallel(
+        favicons.generateFavicons
+    ),
+    gulp.parallel(
         twig.buildTwig
     ),
     serve.serve

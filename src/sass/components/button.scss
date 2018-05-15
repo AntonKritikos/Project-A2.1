@@ -1,15 +1,14 @@
 @import '../mixins/typography';
 
 .button {
-    display: block;
     background: $c-prim;
     border: 1px solid $c-prim;
     color: $c-white;
+    display: block;
     padding: 1rem 4rem;
-    margin: 1rem;
+    position: relative;
     text-align: center;
     transition: .25s background, .25s color;
-    position: relative;
     width: 100%;
     z-index: 2;
 
@@ -38,14 +37,14 @@
     }
 
     &--arrow {
-        border-right: none;
+        border-right: 0;
         max-width: 300px;
 
         &::after {
             background: inherit;
             border: 1px solid $c-prim;
-            border-bottom: none;
-            border-left: none;
+            border-bottom: 0;
+            border-left: 0;
             content: '';
             display: inline-block;
             height: 44px;
@@ -80,9 +79,9 @@
     }
 
     &--big {
-        text-align: left;
-        padding: 1rem;
         max-width: 200px;
+        padding: 1rem;
+        text-align: left;
         width: auto;
 
         .button__text {
