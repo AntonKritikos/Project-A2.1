@@ -1,0 +1,75 @@
+@import '../mixins/typography';
+
+.innovation {
+    background: url('../img/space.jpg') top center no-repeat $c-grey;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    &__container {
+        padding: 0 2rem;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__heading {
+        background: transparentize($c-black, .4);
+        max-width: 500px;
+    }
+
+    &__title {
+        @include style-heading-second;
+        padding: 1rem 1rem 0;
+    }
+
+    &__subtitle {
+        @include style-regular;
+        padding: 0 1rem 1rem;
+    }
+
+    &__wrapper {
+        background: $c-white;
+        padding: 1rem;
+        max-width: 500px;
+
+        .innovation__title {
+            color: $c-prim;
+            padding: 0;
+            margin: 0 0 .8rem;
+        }
+    }
+
+    &__paragraph {
+        color: $c-gray-light;
+        padding: 0 0 2rem;
+    }
+
+    @include screen($screen-simple) {
+        &__container {
+            display: block;
+            transform: none;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        &__content {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
+        &__heading {
+            top: 2rem;
+            left: 4rem;
+            position: absolute;
+        }
+
+        &__wrapper {
+            bottom: 2rem;
+            position: absolute;
+            right: 4rem;
+        }
+    }
+}
