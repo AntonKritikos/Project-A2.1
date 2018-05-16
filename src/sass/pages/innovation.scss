@@ -1,7 +1,7 @@
 @import '../mixins/typography';
 
 .innovation {
-    background: url('../img/space.jpg') top center no-repeat $c-grey;
+    background: url('../img/snel-trein.jpg') top center no-repeat $c-grey;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -15,12 +15,11 @@
 
     &__heading {
         background: transparentize($c-black, .4);
-        max-width: 500px;
+        padding: 1rem;
     }
 
     &__title {
         @include style-heading-second;
-        padding: 1rem 1rem 0;
     }
 
     &__subtitle {
@@ -37,6 +36,11 @@
             color: $c-prim;
             padding: 0;
             margin: 0 0 .8rem;
+        }
+
+        .button {
+            width: auto;
+            margin-left: -30px;
         }
     }
 
