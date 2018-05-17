@@ -42,11 +42,20 @@
 
     &__subtitle {
         @include style-regular;
+        font-size: 1.25rem;
         opacity: 0;
         text-shadow: 0 2px 1px transparentize($c-black, .8);
         transform: translateY(-25%);
         transition: transform .25s, opacity .25s;
         transition-delay: .3s;
+
+        @include screen($screen-simple) {
+            font-size: 1.5rem;
+        }
+
+        @include screen($screen-normal) {
+            font-size: 1.75rem;
+        }
     }
 
     &__icon {

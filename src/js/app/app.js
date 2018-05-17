@@ -1,6 +1,6 @@
 $('.scroll-btn').click(function () {
     $("body, html").animate({
-        scrollTop: window.pageYOffset + $(window).height()
+        scrollTop: $('#anchor').offset().top
     }, 500);
     return false;
 });
