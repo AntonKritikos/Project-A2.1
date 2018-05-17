@@ -89,11 +89,20 @@
         }
     }
 
+<<<<<<< HEAD
     &--left {
         margin-left: -1.9rem;
     }
 
     @include screen($screen-simple) {
         width: auto;
+=======
+    @include screen($screen-simple) {
+        width: auto;
+
+        &--left {
+            margin-left: -1.9rem;
+        }
+>>>>>>> fix/innovations
     }
 }

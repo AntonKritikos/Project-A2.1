@@ -16,6 +16,8 @@
 
     &__heading {
         background: transparentize($c-black, .4);
+        margin: 0 auto;
+        max-width: 500px;
         padding: 1rem;
     }
 
@@ -30,6 +32,10 @@
 
     &__wrapper {
         background: $c-white;
+<<<<<<< HEAD
+=======
+        margin: 0 auto;
+>>>>>>> fix/innovations
         max-width: 500px;
         padding: 1rem;
 
