@@ -16,11 +16,11 @@
 
     &__heading {
         background: transparentize($c-black, .4);
-        padding: 1rem;
     }
 
     &__title {
         @include style-heading-second;
+        padding: 1rem 1rem 0;
     }
 
     &__subtitle {
