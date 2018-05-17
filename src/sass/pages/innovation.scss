@@ -16,6 +16,9 @@
 
     &__heading {
         background: transparentize($c-black, .4);
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 1rem;
     }
 
     &__title {
@@ -30,6 +33,7 @@
 
     &__wrapper {
         background: $c-white;
+        margin: 0 auto;
         max-width: 500px;
         padding: 1rem;
 
