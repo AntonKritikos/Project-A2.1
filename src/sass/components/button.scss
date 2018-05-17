@@ -89,4 +89,12 @@
             margin: 0 0 .4rem;
         }
     }
+
+    @include screen($screen-simple) {
+        width: auto;
+
+        &--left {
+            margin-left: -1.9rem;
+        }
+    }
 }
