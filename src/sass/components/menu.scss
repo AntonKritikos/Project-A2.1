@@ -1,0 +1,185 @@
+@import '../mixins/typography';
+
+.menu {
+    &.is-open {
+        .menu__bar {
+            background: $c-second;
+            opacity: 1;
+            transform: translate(0, 0);
+
+            &:first-child {
+                transform: translateY(0) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:last-child {
+                transform: translateY(0) rotate(-45deg);
+            }
+        }
+
+        .menu__image {
+            opacity: 0;
+
+            &--white {
+                opacity: 1;
+            }
+        }
+
+        .menu__nav {
+            height: 100%;
+            opacity: 1;
+            width: 100%;
+
+            .menu__list {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            .menu__item {
+                opacity: 1;
+                transform: translateY(0);
+                transition: opacity .6s .8s, transform .6s .8s;
+
+                &:hover {
+                    .menu__link {
+                        color: $c-second;
+                    }
+                }
+
+                @for $i from 1 through 5 {
+                    &:nth-child(#{$i}) {
+                        transition-delay: (.3s + (.2s * $i));
+                    }
+                }
+            }
+        }
+    }
+
+    &__button {
+        height: 60px;
+        position: fixed;
+        right: 2rem;
+        top: 1rem;
+        width: 60px;
+        z-index: 5;
+
+        &.is-triggered {
+            .menu__bar {
+                opacity: 1;
+            }
+        }
+
+        &:hover {
+            transition: transform .25s;
+
+            .menu__bar {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__bar {
+        background-color: $c-prim;
+        display: block;
+        height: 3px;
+        left: 15px;
+        position: absolute;
+        top: 34px;
+        transition: color .25s, opacity .25s;
+        width: 40px;
+
+        &:first-child {
+            transform: translateY(-12px);
+            transition: transform .25s;
+        }
+
+        &:nth-child(2) {
+            transition: opacity .25s;
+        }
+
+        &:last-child {
+            transform: translateY(12px);
+            transition: transform .25s;
+        }
+    }
+
+    &__logo {
+        display: block;
+        height: 100px;
+        left: 2rem;
+        position: fixed;
+        top: 2rem;
+        width: 100px;
+        z-index: 9;
+    }
+
+    &__image {
+        position: absolute;
+        transition: opacity .25s, transform .25s;
+        transition-delay: .25s;
+
+        &--white {
+            opacity: 0;
+        }
+    }
+
+    &__nav {
+        background-color: $c-prim;
+        height: 0;
+        opacity: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transition: width .6s, height .6s, opacity .4s;
+        width: 0;
+        z-index: 4;
+    }
+
+    &__list {
+        display: block;
+        opacity: 0;
+        padding: 0 1.5rem;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+
+    &__item {
+        @include style-heading;
+        color: $c-white;
+        display: block;
+        font-weight: $weight-normal;
+        opacity: 0;
+        padding: .5rem 0;
+        position: relative;
+        transform: translateY(50px);
+        transition: transform .3s, opacity .3s;
+        width: auto;
+    }
+
+    &__link {
+        color: $c-white;
+        display: block;
+        transition: color .25s;
+    }
+
+    &__information {
+        @include style-regular;
+        bottom: 2rem;
+        color: $c-white;
+        display: block;
+        font-family: $font-prim;
+        font-size: .8rem;
+        left: 1.5rem;
+        position: absolute;
+
+        & > .menu__link {
+            display: block;
+        }
+    }
+}
