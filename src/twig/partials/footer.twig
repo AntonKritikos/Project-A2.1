@@ -6,6 +6,8 @@
 {% set button_counter           = 2 %}
 {% set footer_button_text_one   = 'INSCHRIJVEN' %}
 {% set footer_button_text_two   = 'MEER INFORMATIE' %}
+{% set button_one_link          = '/' %}
+{% set button_two_link          = '/' %}
 {% set footer_facebook          = 'https://www.facebook.com/HogeschoolUtrecht/' %}
 {% set footer_twitter           = 'https://twitter.com/HU_Utrecht' %}
 {% set footer_instagram         = 'https://www.instagram.com/hogeschoolutrecht/' %}
@@ -25,14 +27,14 @@
                 {% if button_counter > 0 %}
                     <div class="footer__button-wrapper">
                         {% if button_counter >= 1 %}
-                            <button class="button button--{{ footer_theme_one }} footer__button button--margin">
+                            <a class="button button--{{ footer_theme_one }} footer__button button--margin" href="{{ button_one_link }}">
                                 <span class="button__text">{{ footer_button_text_one }}</span>
-                            </button>
+                            </a>
                         {% endif %}
                         {% if button_counter >= 2 %}
-                            <button class="button footer__button button--{{ footer_theme_twoo }}">
+                            <a class="button footer__button button--{{ footer_theme_twoo }}" href="{{ button_two_link }}">
                                 <span class="button__text">{{ footer_button_text_two }}</span>
-                            </button>
+                            </a>
                         {% endif %}
                         <div class="c"></div>
                     </div>
