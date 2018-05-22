@@ -1,9 +1,12 @@
-{#{% set header__title %}#}
+{% set header__title = 'LEID DE TOEKOMST OP' %}
+{% set header__subtitle = 'Zie hoe jij de toekomst gaat beinvloeden' %}
 
 <header class="header">
     <div class="header__content">
-        <h1 class="header__title">LEID DE TOEKOMST OP</h1>
-        <h2 class="header__subtitle">Zie hoe jij de toekomst gaat beinvloeden</h2>
+        <h1 class="header__title">{{ header__title }}</h1>
+        {% if header__subtitle != '' %}
+            <h2 class="header__subtitle">{{ header__subtitle }}</h2>
+        {% endif %}
     </div>
     <div class="header__icon">
         {% include '../macros/scroll-btn.twig' %}
