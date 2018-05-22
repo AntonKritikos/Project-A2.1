@@ -1,20 +1,46 @@
+{% set heading = true %}
+{% set title = 'AROUND THE WORLD IN HALF AN HOUR' %}
+{% set subtitle = '' %}
+
+{% set innovation = true %}
+{% set innovation_title = 'SUPER FAST PUBLIC TRANSPORT' %}
+{% set content_paragraph = 'De SpaceX-CEO is van plan om mensen te laten springen in herbruikbare raketten van precies dezelfde soort. Het wordt gebruikt om mensen naar de ruimte te brengen, over de wereld te vliegen en dan weer terug te keren waar het gelanceerd werd. Het plan, als het werkt, veel sneller reizen dan zelfs het snelste vliegtuig.' %}
+{% set content_button = true %}
+{% set content_button_text = 'BUTTON' %}
+
+{% set theme = '' %}
+
 <section class="innovation" id="anchor">
     <div class="innovation__container">
         <div class="innovation__content">
-            <div class="innovation__heading">
-                <h2 class="innovation__title">AROUND THE WORLD IN HALF AN HOUR</h2>
-                <p class="innovation__subtitle">
-                </p>
-            </div>
-            <article class="innovation__wrapper">
-                <h2 class="innovation__title">SUPER FAST PUBLIC TRANSPORT</h2>
-                <p class="innovation__paragraph">
-                    De SpaceX-CEO is van plan om mensen te laten springen in herbruikbare raketten van precies dezelfde soort. Het wordt gebruikt om mensen naar de ruimte te brengen, over de wereld te vliegen en dan weer terug te keren waar het gelanceerd werd. Het plan, als het werkt, veel sneller reizen dan zelfs het snelste vliegtuig.
-                </p>
-                <button class="button button--left">
-                    <span class="button__text">BUTTON</span>
-                </button>
-            </article>
+            {% if heading %}
+                <div class="innovation__heading">
+                    {% if title != '' %}
+                        <h2 class="innovation__title">{{ title }}</h2>
+                    {% endif %}
+                    {% if subtitle != '' %}
+                        <p class="innovation__subtitle">
+
+                        </p>
+                    {% endif %}
+                </div>
+            {% endif %}
+
+            {% if innovation %}
+                <article class="innovation__wrapper">
+                    {% if innovation_title != '' %}
+                        <h2 class="innovation__title">{{ innovation_title }}</h2>
+                    {% endif %}
+                    {% if content_paragraph != '' %}
+                        <p class="innovation__paragraph">{{ content_paragraph }}</p>
+                    {% endif %}
+                    {% if content_button %}
+                        <button class="button button--left button--{{ theme }}">
+                            <span class="button__text">{{ content_button_text }}</span>
+                        </button>
+                    {% endif %}
+                </article>
+            {% endif %}
         </div>
     </div>
 </section>
