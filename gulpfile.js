@@ -19,8 +19,8 @@ gulp.task("default", gulp.series(
     gulp.parallel(
         sass.compileSass,
         javascript.compileHead,
-        javascript.compileApp,
         javascript.compileLib,
+        javascript.compileApp,
         svg.generateIcons,
         copy.copyDist
     ),
@@ -42,8 +42,8 @@ gulp.task("build", gulp.series(
     gulp.parallel(
         sass.compileSass,
         javascript.compileHead,
-        javascript.compileApp,
         javascript.compileLib,
+        javascript.compileApp,
         svg.generateIcons,
         copy.copyDist
     ),

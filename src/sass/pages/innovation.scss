@@ -1,9 +1,9 @@
 @import '../mixins/typography';
 
 .innovation {
-    background: url('../img/snel-trein.jpg') top center no-repeat $c-grey;
-    background-size: cover;
-    height: 100vh;
+    background: url('../img/snel-trein.jpg') center center no-repeat fixed $c-grey;
+    background-size: 200%;
+    height: 90vh;
     position: relative;
     width: 100%;
 
@@ -18,24 +18,30 @@
         background: transparentize($c-black, .4);
         margin: 0 auto;
         max-width: 500px;
-        padding: 1rem;
+        opacity: 0;
+        padding: 0 1rem;
+        transform: translateY(200px);
+        transition: transform .75s ease-out, opacity .25s;
     }
 
     &__title {
         @include style-heading-second;
-        padding: 1rem 1rem 0;
+        padding: .5rem;
     }
 
     &__subtitle {
         @include style-regular;
-        padding: 0 1rem 1rem;
+        padding: .5rem;
     }
 
     &__wrapper {
         background: $c-white;
         margin: 0 auto;
         max-width: 500px;
+        opacity: 0;
         padding: 1rem;
+        transform: translateY(200px);
+        transition: transform .75s ease-out, opacity .25s;
 
         .innovation__title {
             color: $c-prim;
@@ -47,6 +53,18 @@
     &__paragraph {
         color: $c-gray-light;
         padding: 0 0 2rem;
+    }
+
+    &.is-active {
+        .innovation__wrapper {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .innovation__heading {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     @include screen($screen-simple) {

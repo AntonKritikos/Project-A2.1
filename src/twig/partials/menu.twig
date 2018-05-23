@@ -1,0 +1,35 @@
+{% set menu_home        = 'Home' %}
+{% set menu_innovation  = 'Innovaties' %}
+{% set menu_information = 'MEER OVER HOGESCHOOL UTRECHT' %}
+
+<div class="menu" itemscope itemtype="http://schema.org/URL">
+    <button class="menu__button" aria-label="menu">
+        <span class="menu__bar"></span>
+        <span class="menu__bar"></span>
+        <span class="menu__bar"></span>
+    </button>
+
+    <div class="menu__logo">
+        <a href="/" class="menu__link">
+            <img src="/assets/img/hu-logo.svg" alt="HU logo" class="menu__image">
+            <img src="/assets/img/hu-logo_white.svg" alt="HU logo" class="menu__image menu__image--white">
+        </a>
+    </div>
+
+    <nav class="menu__nav">
+        <ul class="menu__list" itemscope itemtype="http://schema.org/ItemList">
+            <li class="menu__item" itemprop="itemListElement">
+                <a href="/home" class="menu__link" itemprop="url">{{ menu_home }}</a>
+            </li>
+            <li class="menu__item" itemprop="itemListElement">
+                <a href="/innovaties" class="menu__link" itemprop="url">{{ menu_innovation }}</a>
+            </li>
+        </ul>
+        {% if menu_information != '' %}
+            <p class="menu__information" itemscope itemtype="http://schema.org/copyrightHolder" itemprop="copyrightHolder">
+                {{ menu_information }}
+                <a href="https://www.hu.nl/" class="menu__link">www.HU.nl/</a>
+            </p>
+        {% endif %}
+    </nav>
+</div>

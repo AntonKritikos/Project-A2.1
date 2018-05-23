@@ -34,7 +34,8 @@ const js = {
         paths.src.scripts + "app/app.js"
     ],
     lib: [
-        paths.src.vendor + "./jquery/dist/jquery.min.js"
+        paths.src.vendor + "./jquery/dist/jquery.min.js",
+        paths.src.vendor + "./waypoints/lib/noframework.waypoints.min.js"
     ]
 };
 
