@@ -3,7 +3,7 @@
 .menu {
     &.is-open {
         .menu__bar {
-            background: $c-second;
+            background: $c-white;
             opacity: 1;
             transform: translate(0, 0);
 
@@ -119,9 +119,12 @@
     &__image {
         position: absolute;
         transition: opacity .25s, transform .25s;
-        transition-delay: .25s;
 
         &--white {
+            opacity: 0;
+        }
+
+        &.is-disabled {
             opacity: 0;
         }
     }
