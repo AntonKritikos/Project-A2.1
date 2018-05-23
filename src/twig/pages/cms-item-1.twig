@@ -1,38 +1,29 @@
 <div class="container--admin">
 	<h1>CMS ITEMS</h1>
-	<form action="">
-		<label for="title">Verander titel</label>
+	<form action="../../php/send_content.php" method="post" enctype="multipart/form-data">
+		<label for="title">Titel Toevoegen</label>
 		<input type="text" name="title" placeholder="Leid de toekomst op!">
+		<input type="text" name="title_color" placeholder="Red">
 		<a href="">Contentblok verwijderen</a>
-		<label for="subtitle">Verander subtitel</label>
-		<input type="text" name="subtitel" placeholder="Leid de toekomst op!">
+		<label for="subtitle">Subtitel toevoegen</label>
+		<input type="text" name="subtitle" placeholder="Leid de toekomst op!">
+		<input type="text" name="subtitle_color" placeholder="Red">
 		<a href="">Contentblok verwijderen</a>
-		<label for="content">Verander content</label>
+		<label for="content">Content Toevoegen</label>
 		<input type="text" name="content" placeholder="Leid de toekomst op!">
 		<a href="">Contentblok verwijderen</a>
 		<label for="background">Verander achtergrond</label>
-		<input type="text">
+		<input type="file" name="image">
+		<input type="text" name="background_color" placeholder="Red">
 		<a href="">Verwijder</a>
 		<label for="button">Verander button</label>
-		<input type="text" name="button" placeholder="Inschrijven">
-		<input type="text" name="button-url" placeholder="Url:">
+		<input type="text" name="button_text" placeholder="Inschrijven">
+		<input type="text" name="button_link" placeholder="Url:">
+		<input type="text" name="button_align" placeholder="Links">
 		<a href="">Contentblok verwijderen</a>
-		<label for="social-media">verander social media</label>
-		<label for="social-media 1">Social media item 1</label>
-		<input type="text" name="social-media-url" placeholder="Url:">
-		<input type="text" name="social-media-name" placeholder="Fotonaam">
-		<label for="social-media 2">Social media item 2</label>
-		<input type="text" name="social-media-url" placeholder="Url:">
-		<input type="text" name="social-media-name" placeholder="Fotonaam">
-		<button class="button button--left button--red">Upload</button>
-		<button class="button button--right button--red">Verwijder</button>
-		<input type="text" name="social-media-url" placeholder="Url:">
-		<label for="social-media 3">Social media item 3</label>
-		<input type="text" name="social-media-url" placeholder="Url:">
-		<input type="text" name="social-media-name" placeholder="Fotonaam">
-		<button class="button button--left button--red">Upload</button>
-		<button class="button button--right button--red">Verwijder</button>
-		<input type="text" name="social-media-url" placeholder="Url:">
+		<label for="button">
+			
+		</label>
 		<input type="submit" value="Verstuur">
 	</form>
 </div>
