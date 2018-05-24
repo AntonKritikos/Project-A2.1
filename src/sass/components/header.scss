@@ -70,4 +70,24 @@
             margin: 0 auto;
         }
     }
+
+    &__scroll {
+        bottom: 0;
+        display: block;
+        position: absolute;
+
+        @include screen($screen-simple) {
+            display: none;
+        }
+    }
+
+    &__gif {
+        opacity: 0;
+        transition: opacity .25s;
+        transition-delay: .5s;
+
+        &.is-active {
+            opacity: 1;
+        }
+    }
 }
