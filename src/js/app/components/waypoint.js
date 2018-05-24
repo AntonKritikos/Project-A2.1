@@ -20,17 +20,18 @@ for (let i = 0; i < $('.innovation').length; i++) {
     let innovation_waypoint = new Waypoint({
         element: content_array[i],
         handler: function() {
-            if (!$(content_array[i]).hasClass('is-active')) {
-                if (window_W >= '768') {
+            if (window_W >= '768') {
+                if (!$(content_array[i]).hasClass('is-active')) {
                     $(content_array[i]).addClass('is-active');
                 } else {
-                    $(content_array[i]).addClass('is-active--mobile');
+                    $(content_array[i]).removeClass('is-active');
                 }
             } else {
-                if (window_W <= '768') {
+                if (!$(content_array[i]).hasClass('is-active--mobile')) {
+                    $(content_array[i]).addClass('is-active--mobile');
+                } else {
                     $(content_array[i]).removeClass('is-active--mobile');
                 }
-                $(content_array[i]).removeClass('is-active');
             }
         },
         offset: '35%'

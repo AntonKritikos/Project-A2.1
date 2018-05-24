@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="978b4de8-0617-42a8-bd6b-5ba6d850023f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sass/components/nav.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twig/pages/innovation.twig" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sass/pages/innovation.scss" afterPath="$PROJECT_DIR$/src/sass/components/innovation.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app/app.js" afterPath="$PROJECT_DIR$/src/js/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app/components/onload.js" afterPath="$PROJECT_DIR$/src/js/app/components/onload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/php/config/config.php" afterPath="$PROJECT_DIR$/src/php/config/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/php/config/dbconnect.php" afterPath="$PROJECT_DIR$/src/php/config/dbconnect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/php/login.php" afterPath="$PROJECT_DIR$/src/php/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/php/logout.php" afterPath="$PROJECT_DIR$/src/php/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/php/send_content.php" afterPath="$PROJECT_DIR$/src/php/send_content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/header.scss" afterPath="$PROJECT_DIR$/src/sass/components/header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app/components/waypoint.js" afterPath="$PROJECT_DIR$/src/js/app/components/waypoint.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/layout.scss" afterPath="$PROJECT_DIR$/src/sass/layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/libs/icon-animation.scss" afterPath="$PROJECT_DIR$/src/sass/libs/icon-animation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/pages/innovation.scss" afterPath="$PROJECT_DIR$/src/sass/pages/innovation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/twig/macros/scroll-btn.twig" afterPath="$PROJECT_DIR$/src/twig/macros/scroll-btn.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/twig/pages/admin.twig" afterPath="$PROJECT_DIR$/src/twig/pages/admin.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/twig/pages/cms-item-1.twig" afterPath="$PROJECT_DIR$/src/twig/pages/cms-item-1.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/twig/pages/login.twig" afterPath="$PROJECT_DIR$/src/twig/pages/login.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/twig/partials/sidenav.twig" afterPath="$PROJECT_DIR$/src/twig/partials/sidenav.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/twig/templates/index.twig" afterPath="$PROJECT_DIR$/src/twig/templates/index.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/twig/templates/index.twig">
+      <file leaf-file-name="innovation.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sass/components/innovation.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            <state relative-caret-position="-34">
+              <caret line="59" column="18" lean-forward="true" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -95,16 +79,17 @@
         <option value="$PROJECT_DIR$/src/js/app/app.js" />
         <option value="$PROJECT_DIR$/src/sass/components/header.scss" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/js/app/components/waypoint.js" />
         <option value="$PROJECT_DIR$/src/sass/components/button.scss" />
         <option value="$PROJECT_DIR$/src/sass/libs/icon-animation.scss" />
         <option value="$PROJECT_DIR$/src/js/app/components/onload.js" />
         <option value="$USER_HOME$/Desktop/proeve van bekwaamheid/Project-A2.1/src/twig/macros/scroll-btn.twig" />
         <option value="$PROJECT_DIR$/src/twig/macros/scroll-btn.twig" />
         <option value="$PROJECT_DIR$/src/sass/pages/innovation.scss" />
-        <option value="$PROJECT_DIR$/src/sass/layout.scss" />
         <option value="$PROJECT_DIR$/src/twig/pages/innovation.twig" />
         <option value="$PROJECT_DIR$/src/twig/pages/login.twig" />
+        <option value="$PROJECT_DIR$/src/sass/layout.scss" />
+        <option value="$PROJECT_DIR$/src/sass/components/innovation.scss" />
+        <option value="$PROJECT_DIR$/src/js/app/components/waypoint.js" />
       </list>
     </option>
   </component>
@@ -156,6 +141,45 @@
               <item name="Project-A2.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project-A2.1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Project-A2.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project-A2.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project-A2.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project-A2.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project-A2.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project-A2.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project-A2.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project-A2.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project-A2.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project-A2.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project-A2.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project-A2.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -170,6 +194,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/sass/components" />
       <recent name="$PROJECT_DIR$/src/static/img" />
     </key>
   </component>
@@ -293,10 +318,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32037000" />
+    <option name="totallyTimeSpent" value="34899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1337" height="878" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -310,7 +336,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24981302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24981302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -359,14 +385,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/php/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/php/config/dbconnect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -453,14 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/pages/innovation.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/pages/innovation 3.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -481,14 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="89" column="13" lean-forward="false" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -735,10 +737,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/twig/templates/index.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="180">
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app/components/waypoint.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="46" lean-forward="false" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/innovation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="59" column="18" lean-forward="true" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
           <folding />
         </state>
       </provider>
