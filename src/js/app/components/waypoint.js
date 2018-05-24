@@ -1,9 +1,10 @@
-const anchor = document.getElementById('anchor');
 const $logo = $('.menu__image');
-const $content = $('.innovation');
+const anchor1 = document.getElementById('anchor-1');
+let content_array = [];
+let window_W = window.innerWidth;
 
 let hide_logo = new Waypoint({
-    element: anchor,
+    element: anchor1,
     handler: function() {
         if (!$logo.hasClass('is-disabled')) {
             $logo.addClass('is-disabled');
@@ -14,15 +15,24 @@ let hide_logo = new Waypoint({
     offset: '30%'
 });
 
-let move_content = new Waypoint({
-    element: anchor,
-    handler: function() {
-        if (!$content.hasClass('is-active')) {
-            $content.addClass('is-active');
-        } else {
-            $content.removeClass('is-active');
-        }
-    },
-    offset: '20%'
-});
-
+for (let i = 0; i < $('.innovation').length; i++) {
+    content_array[i] = document.querySelector('.innovation-' + ([i + 1]));
+    let innovation_waypoint = new Waypoint({
+        element: content_array[i],
+        handler: function() {
+            if (!$(content_array[i]).hasClass('is-active')) {
+                if (window_W >= '768') {
+                    $(content_array[i]).addClass('is-active');
+                } else {
+                    $(content_array[i]).addClass('is-active--mobile');
+                }
+            } else {
+                if (window_W <= '768') {
+                    $(content_array[i]).removeClass('is-active--mobile');
+                }
+                $(content_array[i]).removeClass('is-active');
+            }
+        },
+        offset: '35%'
+    });
+}

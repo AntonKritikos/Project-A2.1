@@ -4,7 +4,7 @@
 .header {
     @include container;
     align-items: center;
-    background: linear-gradient(to bottom, transparentize($c-black, .8), transparentize($c-black, .8), transparentize($c-black, .3)),
+    background: linear-gradient(to bottom, transparentize($c-black, .6), transparentize($c-black, .6), transparentize($c-black, .3)),
     url('../img/header_background.jpg') 80% 50% no-repeat;
     background-size: cover;
     display: flex;
