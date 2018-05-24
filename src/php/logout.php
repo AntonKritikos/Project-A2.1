@@ -1,5 +1,8 @@
 <?php
-if(isset($_SESSION['id'])){
+//Check if a session is set
+if(isset($_SESSION['id']))
+{
+	//Destroy the session
 	session_destroy();
     unset($_SESSION['id']);
 }
