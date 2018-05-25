@@ -115,6 +115,9 @@
             bottom: 2rem;
             position: absolute;
             right: 4rem;
+            @include screen($screen-large) {
+                right: 8rem;
+            }
         }
     }
 }

@@ -71,6 +71,11 @@
         }
     }
 
+    &__header {
+        margin-top: 2rem;
+        width: auto;
+    }
+
     &--icon {
         padding: 1rem;
         width: auto;
@@ -94,8 +99,6 @@
     }
 
     @include screen($screen-simple) {
-        width: auto;
-
         &--left {
             margin-left: -1.9rem;
         }

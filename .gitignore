@@ -17,4 +17,4 @@ package-lock.json
 
 # Workspace
 .idea/workspace.xml
-.idea/
+.idea/*
