@@ -1,6 +1,6 @@
 $('.header__link').click(function () {
     $("body, html").animate({
-        scrollTop: $('.innovation').offset().top
+        scrollTop: $('.about').offset().top
     }, 500);
     return false;
 });

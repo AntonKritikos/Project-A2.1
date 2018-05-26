@@ -5,7 +5,7 @@
     @include container;
     align-items: center;
     background: linear-gradient(to bottom, transparentize($c-black, .6), transparentize($c-black, .6), transparentize($c-black, .3)),
-    url('../img/header_background.jpg') 80% 50% no-repeat;
+    url('../img/header_background.jpg') center center no-repeat;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +29,10 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .header__link {
+            opacity: 1;
+        }
     }
 
     &__title {
@@ -43,11 +47,12 @@
     &__subtitle {
         @include style-regular;
         font-size: 1.25rem;
+        margin: 0 0 1rem;
         opacity: 0;
         text-shadow: 0 2px 1px transparentize($c-black, .8);
         transform: translateY(-25%);
         transition: transform .25s, opacity .25s;
-        transition-delay: .3s;
+        transition-delay: .25s;
 
         @include screen($screen-simple) {
             font-size: 1.5rem;
@@ -58,36 +63,9 @@
         }
     }
 
-    &__icon {
-        bottom: 1.5rem;
-        height: 50px;
-        left: 1.5rem;
-        position: absolute;
-        width: 100px;
-
-        @include screen($screen-simple) {
-            left: auto;
-            margin: 0 auto;
-        }
-    }
-
-    &__scroll {
-        bottom: 0;
-        display: block;
-        position: absolute;
-
-        @include screen($screen-simple) {
-            display: none;
-        }
-    }
-
-    &__gif {
+    &__link {
+        max-width: 400px;
         opacity: 0;
-        transition: opacity .25s;
-        transition-delay: .5s;
-
-        &.is-active {
-            opacity: 1;
-        }
+        transition: .25s background, .25s color, .25s opacity .5s;
     }
 }
