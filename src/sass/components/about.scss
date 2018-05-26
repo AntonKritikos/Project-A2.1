@@ -1,9 +1,7 @@
+@import '../mixins/typography';
+
 .about {
     padding: 1rem;
-
-    @include screen($screen-simple) {
-        padding: 2rem;
-    }
 
     &__paragraph {
         @include style-regular;
@@ -11,4 +9,7 @@
         text-align: center;
     }
 
+    @include screen($screen-simple) {
+        padding: 2rem;
+    }
 }
