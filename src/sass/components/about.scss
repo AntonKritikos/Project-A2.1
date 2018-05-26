@@ -1,0 +1,15 @@
+@import '../mixins/typography';
+
+.about {
+    padding: 1rem;
+
+    &__paragraph {
+        @include style-regular;
+        color: $c-gray-dark;
+        text-align: center;
+    }
+
+    @include screen($screen-simple) {
+        padding: 2rem;
+    }
+}

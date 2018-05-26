@@ -1,8 +1,8 @@
 @import '../mixins/typography';
 
 .innovation {
-    background: bottom center no-repeat fixed $c-grey;
-    background-size: 150%;
+    background: bottom center no-repeat $c-grey;
+    background-size: 100%;
     border: 4px solid $c-prim;
     height: 90vh;
     position: relative;
@@ -90,6 +90,9 @@
     }
 
     @include screen($screen-simple) {
+        background: bottom center no-repeat fixed $c-grey;
+        background-size: 150%;
+
         &__container {
             display: block;
             height: 100%;
@@ -115,6 +118,10 @@
             bottom: 2rem;
             position: absolute;
             right: 4rem;
+
+            @include screen($screen-large) {
+                right: 8rem;
+            }
         }
     }
 }
