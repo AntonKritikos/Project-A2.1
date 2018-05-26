@@ -9,4 +9,8 @@ function paralax(){
     });
 }
 
-$(window).bind('scroll', paralax);
+
+if ($(window).innerWidth < '768') {
+    $(window).bind('scroll', paralax);
+}
+

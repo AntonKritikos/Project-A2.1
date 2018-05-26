@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="978b4de8-0617-42a8-bd6b-5ba6d850023f" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/about.scss" afterPath="$PROJECT_DIR$/src/sass/components/about.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/twig/macros/header-btn.twig" afterPath="$PROJECT_DIR$/src/twig/macros/header-btn.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/twig/partials/header.twig" afterPath="$PROJECT_DIR$/src/twig/partials/header.twig" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app/components/paralax.js" afterPath="$PROJECT_DIR$/src/js/app/components/paralax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/button.scss" afterPath="$PROJECT_DIR$/src/sass/components/button.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/innovation.scss" afterPath="$PROJECT_DIR$/src/sass/components/innovation.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/twig/partials/innovation.twig" afterPath="$PROJECT_DIR$/src/twig/partials/innovation.twig" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,12 +27,17 @@
         <entry file="file://$PROJECT_DIR$/src/sass/components/innovation.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="219">
+<<<<<<< Updated upstream
               <caret line="92" column="22" lean-forward="false" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
               <folding>
                 <marker date="1527343217913" expanded="true" signature="45:2580" ph="{...}" />
                 <marker date="1527343217913" expanded="true" signature="2562:2572" ph="{...}" />
                 <marker date="1527343217913" expanded="true" signature="2562:2578" ph="{...}" />
               </folding>
+=======
+              <caret line="92" column="49" lean-forward="false" selection-start-line="92" selection-start-column="49" selection-end-line="92" selection-end-column="49" />
+              <folding />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -34,7 +46,11 @@
         <entry file="file://$PROJECT_DIR$/src/js/app/components/paralax.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
+<<<<<<< Updated upstream
               <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+=======
+              <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -54,12 +70,20 @@
         <entry file="file://$PROJECT_DIR$/src/twig/partials/innovation.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
+<<<<<<< Updated upstream
               <caret line="1" column="47" lean-forward="false" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
               <folding />
+=======
+              <caret line="1" column="93" lean-forward="false" selection-start-line="1" selection-start-column="93" selection-end-line="1" selection-end-column="93" />
+              <folding>
+                <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/components/header.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,6 +119,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+=======
+      <file leaf-file-name="button.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/components/button.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6">
+              <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -165,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/js/app/app.js" />
         <option value="$PROJECT_DIR$/src/sass/components/header.scss" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/sass/components/button.scss" />
         <option value="$PROJECT_DIR$/src/sass/libs/icon-animation.scss" />
         <option value="$PROJECT_DIR$/src/js/app/components/onload.js" />
         <option value="$USER_HOME$/Desktop/proeve van bekwaamheid/Project-A2.1/src/twig/macros/scroll-btn.twig" />
@@ -174,6 +204,11 @@
         <option value="$PROJECT_DIR$/src/twig/pages/innovation.twig" />
         <option value="$PROJECT_DIR$/src/twig/pages/login.twig" />
         <option value="$PROJECT_DIR$/src/sass/layout.scss" />
+<<<<<<< Updated upstream
+=======
+        <option value="$PROJECT_DIR$/src/js/app/components/waypoint.js" />
+        <option value="$PROJECT_DIR$/src/sass/components/button.scss" />
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/src/sass/components/innovation.scss" />
         <option value="$PROJECT_DIR$/src/js/app/components/waypoint.js" />
         <option value="$PROJECT_DIR$/src/sass/components/about.scss" />
@@ -448,11 +483,20 @@
       <workItem from="1526979446959" duration="9552000" />
       <workItem from="1527056662830" duration="14776000" />
       <workItem from="1527144853348" duration="4721000" />
+<<<<<<< Updated upstream
+=======
+      <workItem from="1527233109742" duration="12000" />
+      <workItem from="1527342257167" duration="917000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="35085000" />
+=======
+    <option name="totallyTimeSpent" value="36789000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1337" height="878" extended-state="0" />
@@ -540,6 +584,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/sass/components/button.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6">
@@ -551,6 +596,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/src/sass/components/footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -706,10 +753,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/app/components/waypoint.js">
+    <entry file="file://$PROJECT_DIR$/src/sass/components/button.scss">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="330">
           <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="32" />
+=======
+        <state relative-caret-position="-6">
+          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
@@ -734,27 +786,55 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/sass/components/header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-636">
           <caret line="6" column="100" lean-forward="false" selection-start-line="6" selection-start-column="100" selection-end-line="6" selection-end-column="100" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/js/app/components/waypoint.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/innovation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="92" column="49" lean-forward="false" selection-start-line="92" selection-start-column="49" selection-end-line="92" selection-end-column="49" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/twig/partials/header.twig">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="135">
           <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+=======
+        <state relative-caret-position="30">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/twig/macros/header-btn.twig">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
+=======
+        <state relative-caret-position="15">
+          <caret line="1" column="93" lean-forward="false" selection-start-line="1" selection-start-column="93" selection-end-line="1" selection-end-column="93" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>

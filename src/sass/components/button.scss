@@ -98,6 +98,10 @@
         }
     }
 
+    &--margin {
+        margin: 0 0 .4rem;
+    }
+
     @include screen($screen-simple) {
         &--left {
             margin-left: -1.9rem;

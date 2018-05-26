@@ -1,8 +1,8 @@
 @import '../mixins/typography';
 
 .innovation {
-    background: url('../img/innovation_1.jpg') bottom center no-repeat fixed $c-grey;
-    background-size: 150%;
+    background: bottom center no-repeat scroll $c-grey;
+    background-size: 100%;
     border: 4px solid $c-prim;
     height: 90vh;
     position: relative;
@@ -90,6 +90,9 @@
     }
 
     @include screen($screen-simple) {
+        background: bottom center no-repeat fixed $c-grey;
+        background-size: 150%;
+
         &__container {
             display: block;
             height: 100%;
