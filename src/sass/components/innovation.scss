@@ -1,7 +1,7 @@
 @import '../mixins/typography';
 
 .innovation {
-    background: url('../img/innovation_1.jpg') bottom center no-repeat fixed $c-grey;
+    background: bottom center no-repeat fixed $c-grey;
     background-size: 150%;
     border: 4px solid $c-prim;
     height: 90vh;
@@ -85,7 +85,7 @@
     }
 
     &.innovation-2 {
-        background: url('../img/innovation_2.jpg')top center no-repeat fixed $c-grey;
+        background: url('../img/innovation_2.jpg') top center no-repeat fixed $c-grey;
         background-size: 150%;
     }
 
