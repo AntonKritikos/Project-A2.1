@@ -9,7 +9,8 @@ function paralax(){
     });
 }
 
+console.log($(window).width());
 
-if ($(window).innerWidth > '768') {
+if ($(window).width() > '768') {
     $(window).bind('scroll', paralax);
 }
