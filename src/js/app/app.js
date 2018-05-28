@@ -5,3 +5,9 @@ $('.header__link').click(function () {
     return false;
 });
 
+$('.about__link').click(function () {
+    $("body, html").animate({
+        scrollTop: $('.innovation').offset().top
+    }, 500);
+    return false;
+});

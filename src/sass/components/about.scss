@@ -1,15 +1,24 @@
 @import '../mixins/typography';
 
 .about {
-    padding: 1rem;
+    padding: 4rem 1rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+
+    &__title {
+        @include style-heading-second;
+        color: $c-prim;
+        margin: 0 0 1.4rem;
+    }
 
     &__paragraph {
         @include style-regular;
         color: $c-gray-dark;
-        text-align: center;
+        margin: 0 0 1.2rem;
     }
 
     @include screen($screen-simple) {
-        padding: 2rem;
+        padding: 4rem 0;
     }
 }

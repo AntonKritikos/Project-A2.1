@@ -63,6 +63,10 @@
         width: auto;
     }
 
+    &--small {
+        max-width: 400px;
+    }
+
     &--margin {
         margin: 0 0 .4rem;
     }
