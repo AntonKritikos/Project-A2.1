@@ -1,5 +1,5 @@
-{% set menu_home        = 'Home' %}
-{% set menu_innovation  = 'Innovaties' %}
+{#{% set menu_home        = 'Home' %}#}
+{#{% set menu_innovation  = 'Innovaties' %}#}
 {% set menu_information = 'MEER OVER HOGESCHOOL UTRECHT' %}
 
 <div class="menu" itemscope itemtype="http://schema.org/URL">
@@ -19,16 +19,25 @@
     <nav class="menu__nav">
         <ul class="menu__list" itemscope itemtype="http://schema.org/ItemList">
             <li class="menu__item" itemprop="itemListElement">
-                <a href="/home" class="menu__link" itemprop="url">{{ menu_home }}</a>
+                <a href="#" data-target=".header" class="menu__link" itemprop="url">Home</a>
             </li>
             <li class="menu__item" itemprop="itemListElement">
-                <a href="/innovaties" class="menu__link" itemprop="url">{{ menu_innovation }}</a>
+                <a href="#" data-target=".about" class="menu__link" itemprop="url">about</a>
+            </li>
+            <li class="menu__item" itemprop="itemListElement">
+                <a href="#" data-target=".innovation-1" class="menu__link" itemprop="url">Innovation 1</a>
+            </li>
+            <li class="menu__item" itemprop="itemListElement">
+                <a href="#" data-target=".innovation-2" class="menu__link" itemprop="url">Innovation 2</a>
+            </li>
+            <li class="menu__item" itemprop="itemListElement">
+                <a href="#" data-target=".innovation-3" class="menu__link" itemprop="url">Innovation 3</a>
             </li>
         </ul>
         {% if menu_information != '' %}
             <p class="menu__information" itemscope itemtype="http://schema.org/copyrightHolder" itemprop="copyrightHolder">
                 {{ menu_information }}
-                <a href="https://www.hu.nl/" class="menu__link">www.HU.nl/</a>
+                <a href="https://www.hu.nl/" class="menu__link" target="_blank">www.HU.nl/</a>
             </p>
         {% endif %}
     </nav>

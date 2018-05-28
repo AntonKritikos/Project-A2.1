@@ -4,16 +4,18 @@
 @import 'config/reset';
 
 // Components
-//@import 'components/nav';
 @import 'components/button';
 @import 'components/footer';
 @import 'components/header';
 @import 'components/home';
 @import 'components/menu';
 @import 'components/icon';
+@import 'components/innovation';
+@import 'components/about';
+
 
 // Pages
-@import 'pages/innovation';
+
 
 // Libs
 @import 'libs/icon-animation';

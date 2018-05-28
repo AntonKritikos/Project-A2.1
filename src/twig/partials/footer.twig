@@ -4,10 +4,10 @@
 {% set footer_theme_one         = 'blue' %}
 {% set footer_theme_twoo        = '' %}
 {% set button_counter           = 2 %}
-{% set footer_button_text_one   = 'INSCHRIJVEN' %}
+{% set footer_button_text_one   = '' %}
 {% set footer_button_text_two   = 'MEER INFORMATIE' %}
 {% set button_one_link          = '/' %}
-{% set button_two_link          = '/' %}
+{% set button_two_link          = 'https://www.studiekeuze.hu.nl/opleidingen/Leraar-Techniek-tweedegraads' %}
 {% set footer_facebook          = 'https://www.facebook.com/HogeschoolUtrecht/' %}
 {% set footer_twitter           = 'https://twitter.com/HU_Utrecht' %}
 {% set footer_instagram         = 'https://www.instagram.com/hogeschoolutrecht/' %}
@@ -26,13 +26,13 @@
                 {% endif %}
                 {% if button_counter > 0 %}
                     <div class="footer__button-wrapper">
-                        {% if button_counter >= 1 %}
-                            <a class="button button--{{ footer_theme_one }} footer__button button--margin" href="{{ button_one_link }}">
+                        {% if button_counter >= 1 and footer_button_text_one != '' %}
+                            <a class="button button--{{ footer_theme_one }} footer__button button--margin" href="{{ button_one_link }}" target="_blank">
                                 <span class="button__text">{{ footer_button_text_one }}</span>
                             </a>
                         {% endif %}
                         {% if button_counter >= 2 %}
-                            <a class="button footer__button button--{{ footer_theme_twoo }}" href="{{ button_two_link }}">
+                            <a class="button footer__button button--{{ footer_theme_twoo }}" href="{{ button_two_link }}" target="_blank">
                                 <span class="button__text">{{ footer_button_text_two }}</span>
                             </a>
                         {% endif %}

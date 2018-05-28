@@ -1,5 +1,5 @@
 .scroll-btn {
-    display: block;
+    display: none;
     left: 0;
     opacity: 0;
     position: absolute;
@@ -11,9 +11,13 @@
     span {
         margin-left: -55px;
     }
+
+    @include screen($screen-simple) {
+        display: block;
+    }
 }
 
-.scroll-btn.active {
+.scroll-btn.is-active {
     opacity: 1;
 }
 
@@ -25,7 +29,7 @@
 .scroll-btn > *:hover,
 .scroll-btn > *:focus,
 .scroll-btn > *:active,
-.scroll-btn > *.active {
+.scroll-btn > *.is-active {
     opacity: .8;
 }
 
