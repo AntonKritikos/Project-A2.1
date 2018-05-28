@@ -1,7 +1,7 @@
 @import '../mixins/typography';
 
 .innovation {
-    background: url('../img/innovation_1.jpg') top center no-repeat fixed $c-grey;
+    background: url('../img/innovation_1.jpg') left center no-repeat fixed $c-grey;
     background-size: cover;
     height: 90vh;
     overflow: hidden;
@@ -85,17 +85,17 @@
     }
 
     &.innovation-2 {
-        background: url('../img/innovation_2.jpg') center no-repeat fixed $c-grey;
+        background: url('../img/innovation_2.jpg') center center no-repeat fixed $c-grey;
         background-size: cover;
     }
 
     &.innovation-3 {
-        background: url('../img/innovation_3.jpg') bottom right no-repeat fixed $c-grey;
+        background: url('../img/innovation_3.jpg') center right no-repeat fixed $c-grey;
         background-size: cover;
     }
 
     @include screen($screen-simple) {
-        background-size: 150%;
+        background-size: 210%;
 
         &__container {
             display: block;
@@ -130,12 +130,24 @@
 
         &.innovation-2 {
             background: url('../img/innovation_2.jpg') bottom center no-repeat fixed $c-grey;
-            background-size: 150%;
+            background-size: 220%;
         }
 
         &.innovation-3 {
             background: url('../img/innovation_3.jpg') bottom center no-repeat fixed $c-grey;
-            background-size: 150%;
+            background-size: 260%;
+        }
+    }
+
+    @include screen($screen-normal) {
+        background-size: 180%;
+
+        &.innovation-2 {
+            background-size: 180%;
+        }
+
+        &.innovation-3 {
+            background-size: 180%;
         }
     }
 }

@@ -34,6 +34,11 @@ gulp.task("default", gulp.series(
     gulp.parallel(
         twig.buildTwig
     ),
+    gulp.parallel(
+        php.buildPhp,
+        php.buildPhpconfig,
+        php.buildPhpFromPages
+    ),
     serve.serve
 ));
 

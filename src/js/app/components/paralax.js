@@ -1,11 +1,11 @@
-const velocity = .5;
+const velocity = .1;
 
 function paralax(){
     let pos = $(window).scrollTop();
     $('.innovation').each(function() {
         const $element = $(this);
         let height = $element.height() -18;
-        $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) +  'px');
+        $(this).css('backgroundPosition', '45% ' + Math.round((height - pos) * velocity) +  'px');
     });
 }
 

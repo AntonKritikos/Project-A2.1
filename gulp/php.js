@@ -3,10 +3,22 @@ const paths     = require("./_config").paths;
 const gulp      = require('gulp');
 const copy      = require('gulp-copy');
 
-function buildPHP() {
-    return gulp
-        .src('src/php/**/*.{php}')
-        .pipe(gulp.dest('dist'));
+function buildPhp() {
+    return gulp.src(paths.src.php + "*/*.php")
+        .pipe(gulp.dest(paths.target.dist.dist));
 }
 
-exports.buildPHP = buildPHP;
+function buildPhpconfig() {
+    return gulp.src(paths.src.php + "/config/*.php")
+        .pipe(gulp.dest(paths.target.dist.php));
+}
+
+function buildPhpFromPages() {
+    return gulp.src(paths.src.twig + "pages/*.php")
+        .pipe(gulp.dest(paths.target.dist.dist));
+}
+
+
+exports.buildPhp = buildPhp;
+exports.buildPhpconfig = buildPhpconfig;
+exports.buildPhpFromPages = buildPhpFromPages;
