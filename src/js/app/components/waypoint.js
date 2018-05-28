@@ -1,10 +1,10 @@
 const $logo = $('.menu__image');
-const anchor1 = document.getElementById('anchor-1');
+const about = document.getElementById('about');
 let content_array = [];
 let window_W = window.innerWidth;
 
 let hide_logo = new Waypoint({
-    element: anchor1,
+    element: about,
     handler: function() {
         if (!$logo.hasClass('is-disabled')) {
             $logo.addClass('is-disabled');

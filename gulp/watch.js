@@ -6,6 +6,7 @@ const javascript    = require("./javascript");
 const sass          = require("./sass");
 const twig          = require("./twig");
 const lint          = require("./lint");
+const php           = require('./php');
 
 function watchStyles(callback) {
     return gulp.watch(
@@ -18,6 +19,13 @@ function watchTwig(callback) {
     return gulp.watch(
         paths.src.twig + "**/*.twig",
         gulp.series(twig.buildTwig, callback)
+    );
+}
+
+function watchPHP(callback) {
+    return gulp.watch(
+        paths.src.php + "**/*.php",
+        gulp.series(php.buildPHP, callback)
     );
 }
 
@@ -38,3 +46,4 @@ function watchScripts(callback) {
 exports.watchStyles = watchStyles;
 exports.watchScripts = watchScripts;
 exports.watchTwig = watchTwig;
+exports.watchPHP = watchPHP;

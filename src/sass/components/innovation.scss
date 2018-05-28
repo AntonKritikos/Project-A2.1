@@ -2,7 +2,7 @@
 
 .innovation {
     background: url('../img/innovation_1.jpg') top center no-repeat fixed $c-grey;
-    background-size: 300%;
+    background-size: cover;
     height: 90vh;
     overflow: hidden;
     position: relative;
@@ -86,16 +86,15 @@
 
     &.innovation-2 {
         background: url('../img/innovation_2.jpg') center no-repeat fixed $c-grey;
-        background-size: 200%;
+        background-size: cover;
     }
 
     &.innovation-3 {
         background: url('../img/innovation_3.jpg') bottom right no-repeat fixed $c-grey;
-        background-size: 200%;
+        background-size: cover;
     }
 
     @include screen($screen-simple) {
-        //background: bottom center no-repeat fixed $c-grey;
         background-size: 150%;
 
         &__container {
@@ -131,6 +130,11 @@
 
         &.innovation-2 {
             background: url('../img/innovation_2.jpg') bottom center no-repeat fixed $c-grey;
+            background-size: 150%;
+        }
+
+        &.innovation-3 {
+            background: url('../img/innovation_3.jpg') bottom center no-repeat fixed $c-grey;
             background-size: 150%;
         }
     }

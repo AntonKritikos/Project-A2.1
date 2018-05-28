@@ -4,11 +4,12 @@ const lint          = require("./gulp/lint");
 const svg           = require("./gulp/svg");
 const copy          = require("./gulp/copy");
 const javascript    = require("./gulp/javascript");
+const php           = require("./gulp/php");
 const twig          = require("./gulp/twig");
 const serve         = require("./gulp/serve");
 const clean         = require("./gulp/clean");
 const favicons      = require("./gulp/favicons");
-const fonts      = require("./gulp/fonts");
+const fonts         = require("./gulp/fonts");
 
 gulp.task("default", gulp.series(
     clean.clean,

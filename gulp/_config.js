@@ -8,6 +8,7 @@ const paths = {
         fonts: "./src/fonts/",
         icons: "./src/icons/",
         static: "./src/static/",
+        php: "./src/php",
         vendor: "./node_modules/"
     },
 
@@ -19,7 +20,8 @@ const paths = {
             static: "./dist/assets/",
             img: "./dist/assets/img",
             favicons: "./dist/assets/favicons/",
-            fonts: "./dist/assets/fonts"
+            fonts: "./dist/assets/fonts",
+            php: "./dist/assets/php"
         }
     }
 };
