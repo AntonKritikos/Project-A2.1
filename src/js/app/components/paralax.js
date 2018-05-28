@@ -1,4 +1,4 @@
-const velocity = .1;
+const velocity = .15;
 
 function paralax(){
     let pos = $(window).scrollTop();

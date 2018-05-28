@@ -9,7 +9,7 @@ function buildPhp() {
 }
 
 function buildPhpconfig() {
-    return gulp.src(paths.src.php + "/config/*.php")
+    return gulp.src(paths.src.php + "/config/*.php") // fucking aids does not work
         .pipe(gulp.dest(paths.target.dist.php));
 }
 

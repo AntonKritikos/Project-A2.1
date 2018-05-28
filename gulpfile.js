@@ -36,7 +36,7 @@ gulp.task("default", gulp.series(
     ),
     gulp.parallel(
         php.buildPhp,
-        php.buildPhpconfig,
+        php.buildPhpconfig, // does not work yet
         php.buildPhpFromPages
     ),
     serve.serve

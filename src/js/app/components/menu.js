@@ -9,10 +9,18 @@ $menu.click(function () {
     }
 });
 
-$('.menu__item').click(function (e) {
+$('.menu__link').click(function (e) {
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $($(e.target).attr('data-target')).offset().top
+    }, 750);
+    return false;
+});
+
+$('.menu__link-logo').click(function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $('.header').offset().top
     }, 750);
     return false;
 });
