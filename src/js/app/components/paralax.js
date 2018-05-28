@@ -10,6 +10,6 @@ function paralax(){
 }
 
 
-if ($(window).innerWidth < '768') {
+if ($(window).innerWidth > '768') {
     $(window).bind('scroll', paralax);
 }

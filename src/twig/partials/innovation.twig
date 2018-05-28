@@ -11,7 +11,7 @@
 {% set theme                            = '' %}
 
 {% for innovations in range(1, innovation_id) %}
-    <section class="innovation innovation-{{ innovations }}" id="anchor-{{ innovations }}" style="background:url({{ innovation_background }}) bottom center no-repeat #ccc">
+    <section class="innovation innovation-{{ innovations }}" id="anchor-{{ innovations }}" style="background:url({{ innovation_background }}) top center fixed no-repeat #ccc; background-size: 150%">
         <div class="innovation__container">
             <div class="innovation__content">
                 {% if innovation_title and innovation_subtitle != '' %}
