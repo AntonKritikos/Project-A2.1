@@ -21,7 +21,9 @@ const paths = {
             img: "./dist/assets/img",
             favicons: "./dist/assets/favicons/",
             fonts: "./dist/assets/fonts",
-            php: "./dist/assets/php"
+            php: "./dist/assets/",
+            phpc: "./dist/assets/php/config",
+            phpp: "./dist/assets/php"
         }
     }
 };

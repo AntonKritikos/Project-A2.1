@@ -35,8 +35,8 @@ gulp.task("default", gulp.series(
         twig.buildTwig
     ),
     gulp.parallel(
+        php.buildPhpconfig,
         php.buildPhp,
-        php.buildPhpconfig, // does not work yet
         php.buildPhpFromPages
     ),
     serve.serve
