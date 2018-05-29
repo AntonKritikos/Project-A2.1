@@ -1,4 +1,6 @@
+const $header = $('.header');
 const $menu = $('.menu');
+
 $menu.click(function () {
     if ($menu.hasClass('is-open')) {
         $(this).removeClass('is-open');
@@ -14,17 +16,15 @@ $('.menu__link').click(function (e) {
     $('html, body').animate({
         scrollTop: $($(e.target).attr('data-target')).offset().top
     }, 750);
+    $menu.removeClass('is-open');
     return false;
 });
 
 $('.menu__link-logo').click(function (e) {
     e.preventDefault();
     $('html, body').animate({
-        scrollTop: $('.header').offset().top
+        scrollTop: $header.offset().top
     }, 750);
+    $menu.removeClass('is-open');
     return false;
-});
-
-$(window).scroll(function () {
-    $($menu).removeClass('is-open');
 });

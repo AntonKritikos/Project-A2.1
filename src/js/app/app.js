@@ -1,6 +1,6 @@
 $('.header__link').click(function (e) {
     e.preventDefault();
-    $("body, html").animate({
+    $('body, html').animate({
         scrollTop: $('.about').offset().top
     }, 500);
     return false;
@@ -8,8 +8,17 @@ $('.header__link').click(function (e) {
 
 $('.about__link').click(function (e) {
     e.preventDefault();
-    $("body, html").animate({
+    $('body, html').animate({
         scrollTop: $('.innovation').offset().top
+    }, 500);
+    return false;
+});
+
+$('.button--next').click(function (e) {
+    e.preventDefault();
+    console.log($(e.target).closest('.innovation').next('.innovation'));
+    $('body, html').animate({
+        scrollTop: $(e.target).closest('.innovation').next('.innovation').offset().top
     }, 500);
     return false;
 });
