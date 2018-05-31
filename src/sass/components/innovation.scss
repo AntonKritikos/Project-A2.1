@@ -3,7 +3,7 @@
 .innovation {
     background: url('../img/innovation_1.jpg') left center no-repeat fixed $c-grey;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -99,7 +99,8 @@
         &__container {
             display: block;
             height: 100%;
-            max-width: $screen-xlarge;
+            margin: 0 auto;
+            max-width: $screen-normal;
             top: 0;
             transform: none;
             width: 100%;
@@ -112,7 +113,7 @@
         }
 
         &__heading {
-            left: 4rem;
+            left: 2rem;
             max-width: 100%;
             position: absolute;
             top: 2rem;
@@ -122,33 +123,13 @@
         &__wrapper {
             bottom: 2rem;
             position: absolute;
-            right: 4rem;
-
-            @include screen($screen-large) {
-                right: 8rem;
-            }
+            right: 2rem;
         }
 
         &.innovation-2 {
             background: url('../img/innovation_2.jpg') bottom center no-repeat fixed $c-grey;
             background-size: 220%;
         }
-
-        //&:nth-child(even) {
-        //    .innovation__heading {
-        //        left: auto;
-        //        right: 4rem;
-        //    }
-        //
-        //    .innovation__wrapper {
-        //        left: 4rem;
-        //        right: auto;
-        //
-        //        @include screen($screen-large) {
-        //            left: 8rem;
-        //        }
-        //    }
-        //}
     }
 
     @include screen($screen-normal) {
@@ -160,6 +141,16 @@
 
         &.innovation-3 {
             background-size: 180%;
+        }
+    }
+
+    @include screen($screen-large) {
+        &__heading {
+            left: 0;
+        }
+
+        &__wrapper {
+            right: 0;
         }
     }
 }

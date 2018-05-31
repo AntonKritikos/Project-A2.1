@@ -4,7 +4,7 @@
 {% set footer_title             = 'De toekomst opleiden, start vandaag nog' %}
 {% set footer_paragraph         = 'Schrijf je vandaag nog in voor de opleiding: Leraar Techniek tweedegraads. Als je nog meer informatie over de opleiding wilt dan kun je hieronder door naar de informatiepagina over de opleiding van de Hogeschool Utrecht.' %}
 {% set footer_theme_one         = 'blue' %}
-{% set footer_theme_twoo        = 'red' %}
+{% set footer_theme_twoo        = '' %}
 {% set button_counter           = 2 %}
 {% set footer_button_text_one   = 'Meer over Leraar Techniek' %}
 {% set footer_button_text_two   = 'Schrijf je in voor de opleiding' %}
@@ -29,7 +29,7 @@
                 {% if button_counter > 0 %}
                     <div class="footer__button-wrapper">
                         {% if button_counter >= 1 and footer_button_text_one != '' %}
-                            <a class="button button--{{ footer_theme_one }} footer__button button--margin" href="{{ button_one_link }}" target="_blank">
+                            <a class="button button--{{ footer_theme_one }} footer__button" href="{{ button_one_link }}" target="_blank">
                                 <span class="button__icon-wrapper">
                                     {{ icons.icon('link', 'button__icon icon') }}
                                 </span>
