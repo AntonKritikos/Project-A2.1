@@ -34,6 +34,6 @@ for (let i = 0; i < $('.innovation').length; i++) {
                 }
             }
         },
-        offset: '35%'
+        offset: '45%'
     });
 }

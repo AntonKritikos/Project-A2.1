@@ -4,7 +4,6 @@
     margin: 0 auto;
     max-width: 800px;
     padding: 4rem 1rem;
-    text-align: center;
 
     &__title {
         @include style-heading-second;
@@ -19,6 +18,7 @@
     }
 
     @include screen($screen-simple) {
-        padding: 4rem 0;
+        text-align: center;
+        padding: 4rem 2rem;
     }
 }
