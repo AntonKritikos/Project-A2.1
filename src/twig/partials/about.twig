@@ -1,3 +1,5 @@
+{% import '../macros/icon.twig' as icons %}
+
 <section class="about" id="about">
     <h2 class="about__title">Klaar om nieuwe kennis over te dragen?</h2>
     <p class="about__paragraph">
@@ -7,6 +9,9 @@
         nu al mee kan werken.
     </p>
     <a href="#" class="button button--small about__link">
+        <span class="button__icon-wrapper">
+            {{ icons.icon('down', 'button__icon icon') }}
+        </span>
         <span class="button__text">Naar de innovaties</span>
     </a>
 </section>

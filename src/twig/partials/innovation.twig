@@ -45,6 +45,8 @@
     {#</section>#}
 {#{% endfor %}#}
 
+{% import '../macros/icon.twig' as icons %}
+
 <section class="innovation innovation-1" id="anchor-1">
     <div class="innovation__container">
         <div class="innovation__content">
@@ -56,9 +58,15 @@
                     lassen buiten de normale werkplaats. Dit is een speelse en snelle manier van leren.
                 </p>
                 <a class="button button--blue" href="https://youtu.be/wYRymhZrFmk?t=62" target="_blank">
+                    <span class="button__icon-wrapper">
+                        {{ icons.icon('link', 'button__icon icon') }}
+                    </span>
                     <span class="button__text">Bekijk de video over VR</span>
                 </a>
                 <a class="button button--next" href="#">
+                    <span class="button__icon-wrapper">
+                        {{ icons.icon('down', 'button__icon icon') }}
+                    </span>
                     <span class="button__text">Volgende innovatie</span>
                 </a>
             </article>
@@ -73,12 +81,15 @@
                 <h2 class="innovation__title">Heb jij een passie voor techniek?</h2>
             </div>
             <article class="innovation__wrapper">
-                <h2 class="innovation__title">Studeer Leraar Techniek bij Hogeschool Utrecht</h2>
+                <h2 class="innovation__title">Studeer Leraar Techniek bij de Hogeschool Utrecht</h2>
                 <p class="innovation__paragraph">
                     Kom studeren voor leraar techniek en inspireer jouw leerlingen om ontwikkelingen in de technologie
                     te creëren. Word leraar techniek en leid de toekomst op!
                 </p>
                 <a class="button button--to-footer" href="#">
+                    <span class="button__icon-wrapper">
+                        {{ icons.icon('down', 'button__icon') }}
+                    </span>
                     <span class="button__text">Schrijf je in!</span>
                 </a>
             </article>

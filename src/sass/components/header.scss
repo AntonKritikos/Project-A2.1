@@ -64,8 +64,13 @@
     }
 
     &__link {
-        max-width: 400px;
         opacity: 0;
         transition: .25s background, .25s color, .25s opacity .5s;
+    }
+
+    @include screen($screen-simple) {
+        &__link {
+            max-width: 400px;
+        }
     }
 }

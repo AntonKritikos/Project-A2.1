@@ -1,3 +1,4 @@
+{% import '../macros/icon.twig' as icons %}
 {% set header__title        = 'LEID DE TOEKOMST OP' %}
 {% set header__subtitle     = 'Zie hoe jij de toekomst gaat beïnvloeden als leraar Techniek' %}
 
@@ -8,6 +9,9 @@
             <h2 class="header__subtitle">{{ header__subtitle }}</h2>
         {% endif %}
         <a class="button header__link">
+            <span class="button__icon-wrapper">
+                {{ icons.icon('down', 'button__icon icon') }}
+            </span>
             <span class="button__text">Ontdek de toekomst</span>
         </a>
     </div>

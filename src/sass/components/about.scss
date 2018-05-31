@@ -18,7 +18,7 @@
     }
 
     @include screen($screen-simple) {
-        text-align: center;
         padding: 4rem 2rem;
+        text-align: center;
     }
 }
