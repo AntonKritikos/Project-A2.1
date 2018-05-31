@@ -1,6 +1,19 @@
 @import '../mixins/typography';
 
 .menu {
+    &__shadow {
+        background: white;
+        box-shadow: -150px 150px 100px 0px transparentize($c-white, .8);
+        border-radius: 100%;
+        display: block;
+        position: fixed;
+        right: -300px;
+        top: -300px;
+        height: 300px;
+        width: 300px;
+        z-index: 2;
+    }
+
     &.is-open {
         .menu__bar {
             background: $c-white;
