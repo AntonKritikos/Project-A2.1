@@ -8,6 +8,6 @@ $subtitle = $mysqli->real_escape_string($_POST['subtitle']);
 $subtitle_color = $mysqli->real_escape_string($_POST['subtitle_color']);
 $content = $mysqli->real_escape_string($_POST['content']);
 
-$sql = ("INSERT INTO footer (title, title_color, subtitle, subtitle_color, content) VALUES ('$title', '$title_color', '$subtitle', '$subtitle_color', '$content'");
-$result = $mysqli->query($sql);
+$sql = ("UPDATE footer SET title = '$title', title_color = '$title_color', subtitle = '$subtitle', subtitle_color = '$subtitle_color', content = '$content'");
+$results = $mysqli->query($sql);
 ?>
