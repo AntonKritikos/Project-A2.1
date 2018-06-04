@@ -1,4 +1,5 @@
 <?php
+echo "TEst";
 require 'config/config.php';
 require 'config/dbconnect.php';
 	$title = $mysqli->real_escape_string($_POST['title']);
@@ -19,7 +20,7 @@ require 'config/dbconnect.php';
 		$needwidth = 800;
 		$file= $_FILES['image']['tmp_name'];
 		$filename= $_FILES['image']['name'];
-		$destination= 'assets/img/'.$_FILES['image']['name'];
+		$destination= '../static/img/'.$_FILES['image']['name'];
 
 		if(move_uploaded_file($file, $destination))
 		{
@@ -36,9 +37,12 @@ require 'config/dbconnect.php';
 				$errors[] = 'Verkeerde dimensies gebruikt. Het bestand mag maximaal 800 pixels hoog zijn en 800 pixels breed.';
 			}
 
+			var_dump($errors);
+
 		    if(count($errors) === 0)
 		    {
 				$sql = ("INSERT INTO layout (title, title_color, subtitle, subtitle_color, content, background_color, background_image, button_text, button_link, button_align) VALUES ('$title', '$title_color', '$subtitle', '$subtitle_color', '$content', '$background_color', '$destination', '$button_text', '$button_link', '$button_align')");
+				var_dump($sql);
 			    $results = $mysqli->query($sql);
 			    echo "Met succes geupload";
 			    echo "<a href='../twig/pages/admin.twig'>Ga terug</a>";
@@ -47,17 +51,18 @@ require 'config/dbconnect.php';
 		else
 		{
 		  echo 'Problemen met het uploaden van: '.$filename."<br>";
-		  echo "<a href='assets/cms-item-1.twig'>Ga terug</a>";
+		  echo "<a href='../twig/pages/cms-item-1.twig'>Ga terug</a>";
 		}
 	}
 	else
 	{
-		$result = $mysqli->query("INSERT INTO layout (title, title_color, subtitle, subtitle_color, content, background_color, button_text, button_link, button_align) VALUES ('$title', '$title_color', '$subtitle', '$subtitle_color', '$content', '$background_color', '$button_text', '$button_link', '$button_align'");
+		$result = $mysqli->query("INSERT INTO layout (title, title_color, subtitle, subtitle_color, content, background_color, button_text, button_link, button_align) VALUES ('$title', '$title_color', '$content', '$background_color', '$button_text', '$button_link', '$button_align'");
+		var_dump($result);
 
 		?>
-		<div>
+		<div class="succes">
 			<p>Het stuk is succesvol toegevoegd</p>
-			<a href="assets/admin.html">Ga terug</a>
+			<a href="../twig/pages/admin.twig">Ga terug</a>
 		</div>
 		<?php
 	}

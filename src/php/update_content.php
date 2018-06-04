@@ -3,80 +3,7 @@ require 'config/config.php';
 require 'config/dbconnect.php';
 
 //Declare variables
-if (isset($_POST['title']))
-{
-	$title = $mysqli->real_escape_string($_POST['title']);
-}
-else
-{
-	$title = '';
-}
-if (isset($_POST['title_color']))
-{
-	$title_color = $mysqli->real_escape_string($_POST['title_color']);
-}
-else
-{
-	$title_color = '';
-}
-if (isset($_POST['subtitle']))
-{
-	$subtitle = $mysqli->real_escape_string($_POST['subtitle']);
-}
-else
-{
-	$subtitle = '';
-}
-if (isset($_POST['subtitle_color']))
-{
-	$subtitle_color = $mysqli->real_escape_string($_POST['subtitle_color']);
-}
-else
-{
-	$subtitle_color = '';
-}
-if (isset($_POST['content']))
-{
-	$content = $mysqli->real_escape_string($_POST['content']);
-}
-else
-{
-	$content = '';
-}
-if (isset($_POST['background_color']))
-{
-	$background_color = $mysqli->real_escape_string($_POST['background_color']);
-}
-else
-{
-	$background_color = '';
-}
-if (isset($_POST['button_text']))
-{
-	$button_text = $mysqli->real_escape_string($_POST['button_text']);
-}
-else
-{
-	$button_text = '';
-}
-if (isset($_POST['button_link']))
-{
-	$button_link = $mysqli->real_escape_string($_POST['button_link']);
-}
-else
-{
-	$button_link = '';
-}
-if (isset($_POST['button_align']))
-{
-	$button_align = $mysqli->real_escape_string($_POST['button_align']);
-}
-else
-{
-	$button_align = '';
-}
-
-
+$title = $mysqli->real_escape_string($_POST['title']);
 $title_color = $mysqli->real_escape_string($_POST['title_color']);
 $subtitle = $mysqli->real_escape_string($_POST['subtitle']);
 $subtitle_color = $mysqli->real_escape_string($_POST['subtitle_color']);
@@ -124,14 +51,14 @@ if(isset($_FILES['image']))
 			$sql = ("UPDATE layout SET title = '$title', title_color = '$title_color, subtitle = '$subtitle', subtitle_color = '$subtitle_color', content = '$content', background_color = '$background_color', button_text = '$button_text', button_link = '$button_link', button_align = 'button_align', background_image = '$destination");
 		    $results = $mysqli->query($sql);
 		    echo "Met succes geupload";
-		    echo "<a href='../admin.html'>Ga terug</a>";
+		    echo "<a href='../twig/pages/admin.twig'>Ga terug</a>";
 	    }
 	}
 	//What happens if there is a problem moving the image
 		else
 	{
 	  echo 'Problemen met het uploaden van: '.$filename."<br>";
-	  echo "<a href='../admin.html'>Ga terug</a>";
+	  echo "<a href='../twig/pages/cms-item-1.twig'>Ga terug</a>";
 	}
 }
 //If no image is found
@@ -142,7 +69,7 @@ else
 	?>
 	<div class="succes">
 		<p>Het stuk is succesvol toegevoegd</p>
-		<a href="../admin.html">Ga terug</a>
+		<a href="../twig/pages/admin.twig">Ga terug</a>
 	</div>
 	<?php
 }

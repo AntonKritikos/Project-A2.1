@@ -11,11 +11,10 @@ node_modules/
 
 # dotenv environment variables file if used
 .env
-*.DS_Store
 
 # Package lock file
 package-lock.json
 
 # Workspace
 .idea/workspace.xml
-.idea/
+.idea/*

@@ -1,0 +1,156 @@
+@import '../mixins/typography';
+
+.innovation {
+    background: url('../img/innovation_1.jpg') left center no-repeat fixed $c-grey;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    &__container {
+        padding: 0 2rem;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__heading {
+        background: transparentize($c-prim, .4);
+        margin: 0 auto;
+        max-width: 500px;
+        opacity: 0;
+        padding: 0 1rem;
+        transition: transform .5s ease-out, opacity .25s;
+
+        @include screen($screen-simple) {
+            transform: translateY(200px);
+        }
+    }
+
+    &__title {
+        @include style-heading-second;
+        padding: .5rem;
+    }
+
+    &__subtitle {
+        @include style-regular;
+        padding: .5rem;
+    }
+
+    &__wrapper {
+        background: $c-white;
+        margin: 0 auto;
+        max-width: 500px;
+        opacity: 0;
+        padding: 1rem;
+        transition: transform .5s ease-out, opacity .25s;
+
+        .innovation__title {
+            color: $c-prim;
+            margin: 0 0 .8rem;
+            padding: 0;
+        }
+
+        a:nth-child(even) {
+            margin-top: .4rem;
+        }
+
+        @include screen($screen-simple) {
+            transform: translateY(200px);
+        }
+    }
+
+    &__paragraph {
+        color: $c-gray-light;
+        padding: 0 0 2rem;
+    }
+
+    &.is-active {
+        .innovation__wrapper {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .innovation__heading {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    &.is-active--mobile {
+        .innovation__wrapper {
+            opacity: 1;
+        }
+
+        .innovation__heading {
+            opacity: 1;
+        }
+    }
+
+    &.innovation-2 {
+        background: url('../img/innovation_2.jpg') center center no-repeat fixed $c-grey;
+        background-size: cover;
+    }
+
+    @include screen($screen-simple) {
+        background-size: 210%;
+
+        &__container {
+            display: block;
+            height: 100%;
+            margin: 0 auto;
+            max-width: $screen-normal;
+            top: 0;
+            transform: none;
+            width: 100%;
+        }
+
+        &__content {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
+        &__heading {
+            left: 2rem;
+            max-width: 100%;
+            position: absolute;
+            top: 2rem;
+            width: auto;
+        }
+
+        &__wrapper {
+            bottom: 2rem;
+            position: absolute;
+            right: 2rem;
+        }
+
+        &.innovation-2 {
+            background: url('../img/innovation_2.jpg') bottom center no-repeat fixed $c-grey;
+            background-size: 220%;
+        }
+    }
+
+    @include screen($screen-normal) {
+        background-size: 180%;
+
+        &.innovation-2 {
+            background-size: 180%;
+        }
+
+        &.innovation-3 {
+            background-size: 180%;
+        }
+    }
+
+    @include screen($screen-large) {
+        &__heading {
+            left: 0;
+        }
+
+        &__wrapper {
+            right: 0;
+        }
+    }
+}
