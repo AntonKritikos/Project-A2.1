@@ -19,14 +19,32 @@
     &:hover {
         background: $c-white;
         color: $c-prim;
+
+        .button__icon {
+            fill: $c-prim;
+        }
     }
 
     &__text {
         @include style-button;
-        display: block;
+        display: inline-block;
 
         &--small {
             @include style-button-small;
+        }
+    }
+
+    &__icon-wrapper {
+        @include style-button;
+        display: inline-block;
+
+        .button__icon {
+            display: inline-block;
+            fill: $c-white;
+            margin: 0 .2rem 0 0;
+            max-height: 25px;
+            max-width: 25px;
+            transition: fill .25s;
         }
     }
 
@@ -37,37 +55,39 @@
         &:hover {
             background: $c-white;
             color: $c-second;
+
+            .button__icon {
+                fill: $c-second;
+            }
         }
     }
 
     &__header {
-        margin-top: 2rem;
+        margin: 2rem 0 0;
         width: auto;
     }
 
-    &--icon {
-        padding: 1rem;
-        width: auto;
+    @include screen($screen-simple) {
+        &__icon-wrapper {
+            .button__icon {
+                margin: 0 .4rem 0 0;
+                max-height: 28px;
+                max-width: 28px;
+            }
+        }
 
-        .button__icon {
-            @include style-button;
-            display: block;
-            margin: 0 0 .4rem;
+        &--small {
+            max-width: 400px;
         }
     }
 
-    &--big {
-        max-width: 200px;
-        padding: 1rem;
-        text-align: left;
-        width: auto;
-    }
-
-    &--small {
-        max-width: 400px;
-    }
-
-    &--margin {
-        margin: 0 0 .4rem;
+    @include screen($screen-normal) {
+        &__icon-wrapper {
+            .button__icon {
+                margin: 0 .5rem 0 0;
+                max-height: 30px;
+                max-width: 30px;
+            }
+        }
     }
 }
