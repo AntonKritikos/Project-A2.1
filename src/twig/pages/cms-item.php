@@ -1,34 +1,4 @@
 <?php require '/assets/php/fetch_content_one.php'; ?>
-<!-- <div class="container--admin">
-	<h1>CMS ITEMS 2</h1>
-	<form action="">
-		<label for="title">Verander titel</label>
-		<input type="text" name="title" placeholder="Leid de toekomst op!">
-		<a href="">Contentblok verwijderen</a>
-		<label for="subtitle">Verander subtitel</label>
-		<input type="text" name="subtitel" placeholder="Leid de toekomst op!">
-		<a href="">Contentblok verwijderen</a>
-		<label for="content">Verander content</label>
-		<input type="text" name="content" placeholder="Leid de toekomst op!">
-		<a href="">Contentblok verwijderen</a>
-		<label for="background">Verander achtergrond</label>
-		<input type="text">
-		<a href="">Verwijder</a>
-		<label for="button">Verander button</label>
-		<input type="text" name="button" placeholder="Inschrijven">
-		<input type="text" name="button-url" placeholder="Url:">
-		<a href="">Contentblok verwijderen</a>
-		<label for="social-media">verander social media</label>
-		<label for="social-media 1">Social media item 1</label>
-		<input type="text">
-		<input type="text" name="social-media-url" placeholder="Url:">
-		<label for="social-media 2">Social media item 2</label>
-		<button class="button button--left button--red">Upload</button>
-		<button class="button button--right button--red">Verwijder</button>
-		<input type="text" name="social-media-url" placeholder="Url:">
-		<input type="submit" value="Verstuur">
-	</form>
-</div> -->
 <!-- Input scherm voor de CMS items -->
 <div class="container__admin">
 	<h1>CMS ITEMS</h1>
