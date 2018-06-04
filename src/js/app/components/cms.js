@@ -1,0 +1,1 @@
+$('.admin__content--delete').closest('div').remove();

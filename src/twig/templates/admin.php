@@ -6,11 +6,11 @@
 	<body>
 		<div class="site">
 			<div class="site__content">
-                {% include '../pages/admin.twig' %}
+                {% include '../pages/admin.php' %}
 			</div>
 
 			<div class="site__sidenav">
-				{% include '../partials/sidenav.twig' %}
+				{% include '../partials/sidenav.php' %}
 			</div>
 
 			{% block js %}

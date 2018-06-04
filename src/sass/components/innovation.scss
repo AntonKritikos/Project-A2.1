@@ -16,7 +16,7 @@
     }
 
     &__heading {
-        background: transparentize($c-black, .4);
+        background: transparentize($c-prim, .4);
         margin: 0 auto;
         max-width: 500px;
         opacity: 0;
@@ -93,17 +93,13 @@
         background-size: cover;
     }
 
-    &.innovation-3 {
-        background: url('../img/innovation_3.jpg') center right no-repeat fixed $c-grey;
-        background-size: cover;
-    }
-
     @include screen($screen-simple) {
         background-size: 210%;
 
         &__container {
             display: block;
             height: 100%;
+            max-width: $screen-xlarge;
             top: 0;
             transform: none;
             width: 100%;
@@ -120,6 +116,7 @@
             max-width: 100%;
             position: absolute;
             top: 2rem;
+            width: auto;
         }
 
         &__wrapper {
@@ -137,10 +134,21 @@
             background-size: 220%;
         }
 
-        &.innovation-3 {
-            background: url('../img/innovation_3.jpg') bottom center no-repeat fixed $c-grey;
-            background-size: 260%;
-        }
+        //&:nth-child(even) {
+        //    .innovation__heading {
+        //        left: auto;
+        //        right: 4rem;
+        //    }
+        //
+        //    .innovation__wrapper {
+        //        left: 4rem;
+        //        right: auto;
+        //
+        //        @include screen($screen-large) {
+        //            left: 8rem;
+        //        }
+        //    }
+        //}
     }
 
     @include screen($screen-normal) {

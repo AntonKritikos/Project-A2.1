@@ -1,17 +1,17 @@
 <?php
 require 'config/config.php';
 require 'config/dbconnect.php';
-	$title = $mysqli->real_escape_string($_POST['title']);
-	$title_color = $mysqli->real_escape_string($_POST['title_color']);
-	$subtitle = $mysqli->real_escape_string($_POST['subtitle']);
-	$subtitle_color = $mysqli->real_escape_string($_POST['subtitle_color']);
-	$content = $mysqli->real_escape_string($_POST['content']);
-	$background_color = $mysqli->real_escape_string($_POST['background_color']);
-	$button_text = $mysqli->real_escape_string($_POST['button_text']);
-	$button_link = $mysqli->real_escape_string($_POST['button_link']);
-	$button_align = $mysqli->real_escape_string($_POST['button_align']);
 
-	if(isset($_FILES['image']))
+$title = $mysqli->real_escape_string($_POST['title']);
+$title_color = $mysqli->real_escape_string($_POST['title_color']);
+$subtitle = $mysqli->real_escape_string($_POST['subtitle']);
+$subtitle_color = $mysqli->real_escape_string($_POST['subtitle_color']);
+$content = $mysqli->real_escape_string($_POST['content']);
+
+$sql = ("INSERT INTO footer (title, title_color, subtitle, subtitle_color, content) VALUES ('$title', '$title_color', '$subtitle', '$subtitle_color', '$content'");
+$result = $mysqli->query($sql);
+
+if(isset($_FILES['image']))
 	{
 	    $errors     = array();
 	    $maxsize    = 100000;
@@ -38,7 +38,7 @@ require 'config/dbconnect.php';
 
 		    if(count($errors) === 0)
 		    {
-				$sql = ("INSERT INTO layout (title, title_color, subtitle, subtitle_color, content, background_color, background_image, button_text, button_link, button_align) VALUES ('$title', '$title_color', '$subtitle', '$subtitle_color', '$content', '$background_color', '$destination', '$button_text', '$button_link', '$button_align')");
+				$sql = ("INSERT INTO footer (title, title_color, subtitle, subtitle_color, content, socialmedia_id) VALUES ('$title', '$title_color', '$subtitle', '$subtitle_color', '$content', '$social_media");
 			    $results = $mysqli->query($sql);
 			    echo "Met succes geupload";
 			    echo "<a href='../twig/pages/admin.twig'>Ga terug</a>";
@@ -61,4 +61,8 @@ require 'config/dbconnect.php';
 		</div>
 		<?php
 	}
+?>
+<div>
+	<a href="assets/admin.html">Ga terug</a>
+</div>
 ?>

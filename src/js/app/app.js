@@ -16,9 +16,16 @@ $('.about__link').click(function (e) {
 
 $('.button--next').click(function (e) {
     e.preventDefault();
-    console.log($(e.target).closest('.innovation').next('.innovation'));
     $('body, html').animate({
         scrollTop: $(e.target).closest('.innovation').next('.innovation').offset().top
+    }, 500);
+    return false;
+});
+
+$('.button--to-footer').click(function (e) {
+    e.preventDefault();
+    $('body, html').animate({
+        scrollTop: $(document).height()
     }, 500);
     return false;
 });
