@@ -13,6 +13,7 @@
 {% set footer_facebook          = 'https://www.facebook.com/HogeschoolUtrecht/' %}
 {% set footer_twitter           = 'https://twitter.com/HU_Utrecht' %}
 {% set footer_instagram         = 'https://www.instagram.com/hogeschoolutrecht/' %}
+{% set footer_linkedin          = 'https://www.linkedin.com/school/hogeschool-utrecht/' %}
 
 <footer class="footer">
     <div class="footer__wrapper">
@@ -58,13 +59,16 @@
         </div>
         <div class="footer__icons">
             <a href="{{ footer_facebook }}" class="footer__link" target="_blank">
-                <i class="icon icon--footer fab fa-facebook-f"></i>
+                {{ icons.icon('facebook', 'icon icon--footer') }}
             </a>
             <a href="{{ footer_twitter }}" class="footer__link" target="_blank">
-                <i class="icon icon--footer fab fa-twitter"></i>
+                {{ icons.icon('twitter', 'icon icon--footer') }}
             </a>
             <a href="{{ footer_instagram }}" class="footer__link" target="_blank">
-                <i class="icon icon--footer fab fa-instagram"></i>
+                {{ icons.icon('instagram', 'icon icon--footer') }}
+            </a>
+            <a href="{{ footer_linkedin }}" class="footer__link" target="_blank">
+                {{ icons.icon('linkedin', 'icon icon--footer') }}
             </a>
         </div>
     </div>
