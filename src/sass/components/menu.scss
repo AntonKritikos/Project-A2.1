@@ -2,14 +2,14 @@
 
 .menu {
     &__shadow {
-        background: white;
-        box-shadow: -150px 150px 100px 0px transparentize($c-white, .8);
+        background: $c-white;
         border-radius: 100%;
+        box-shadow: -150px 150px 100px 0 transparentize($c-white, .8);
         display: block;
+        height: 300px;
         position: fixed;
         right: -300px;
         top: -300px;
-        height: 300px;
         width: 300px;
         z-index: 2;
     }
