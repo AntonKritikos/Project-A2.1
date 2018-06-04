@@ -6,6 +6,7 @@ $title = $mysqli->real_escape_string($_POST['title']);
 $title_color = $mysqli->real_escape_string($_POST['title_color']);
 $subtitle = $mysqli->real_escape_string($_POST['subtitle']);
 $subtitle_color = $mysqli->real_escape_string($_POST['subtitle_color']);
+
 if(isset($_FILES['image']))
 {
 	$errors     = array();
