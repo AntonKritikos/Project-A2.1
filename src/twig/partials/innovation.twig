@@ -45,8 +45,6 @@
     {#</section>#}
 {#{% endfor %}#}
 
-{% import '../macros/icon.twig' as icons %}
-
 <section class="innovation innovation-1" id="anchor-1">
     <div class="innovation__container">
         <div class="innovation__content">
@@ -59,13 +57,13 @@
                 </p>
                 <a class="button button--blue" href="https://youtu.be/wYRymhZrFmk?t=62" target="_blank">
                     <span class="button__icon-wrapper">
-                        {{ icons.icon('play', 'button__icon icon') }}
+                        <i class="button__icon icon fas fa-play"></i>
                     </span>
                     <span class="button__text">Bekijk de video over VR</span>
                 </a>
                 <a class="button button--next" href="#">
                     <span class="button__icon-wrapper">
-                        {{ icons.icon('down', 'button__icon icon') }}
+                        <i class="button__icon icon fas fa-angle-down"></i>
                     </span>
                     <span class="button__text">Volgende innovatie</span>
                 </a>
@@ -88,7 +86,7 @@
                 </p>
                 <a class="button button--to-footer" href="#">
                     <span class="button__icon-wrapper">
-                        {{ icons.icon('down', 'button__icon') }}
+                        <i class="button__icon icon fas fa-angle-down"></i>
                     </span>
                     <span class="button__text">Schrijf je in!</span>
                 </a>

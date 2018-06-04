@@ -1,5 +1,3 @@
-{% import '../macros/icon.twig' as icons %}
-
 {% set footer_content           = true %}
 {% set footer_title             = 'De toekomst opleiden, start vandaag nog' %}
 {% set footer_paragraph         = 'Schrijf je vandaag nog in voor de opleiding: Leraar Techniek tweedegraads. Als je nog meer informatie over de opleiding wilt dan kun je hieronder door naar de informatiepagina over de opleiding van de Hogeschool Utrecht.' %}
@@ -32,7 +30,7 @@
                         {% if button_counter >= 1 and footer_button_text_one != '' %}
                             <a class="button button--{{ footer_theme_one }} footer__button footer__button--margin" href="{{ button_one_link }}" target="_blank">
                                 <span class="button__icon-wrapper">
-                                    {{ icons.icon('link', 'button__icon icon') }}
+                                    <i class="button__icon icon fas fa-link"></i>
                                 </span>
                                 <span class="button__text">{{ footer_button_text_one }}</span>
                             </a>
@@ -40,7 +38,7 @@
                         {% if button_counter >= 2 and footer_button_text_two != '' %}
                             <a class="button footer__button button--{{ footer_theme_twoo }}" href="{{ button_two_link }}" target="_blank">
                                 <span class="button__icon-wrapper">
-                                    {{ icons.icon('link', 'button__icon icon') }}
+                                    <i class="button__icon icon fas fa-link"></i>
                                 </span>
                                 <span class="button__text">{{ footer_button_text_two }}</span>
                             </a>
@@ -59,16 +57,16 @@
         </div>
         <div class="footer__icons">
             <a href="{{ footer_facebook }}" class="footer__link" target="_blank">
-                {{ icons.icon('facebook', 'icon icon--footer') }}
+                <i class="icon--footer icon fab fa-facebook-f"></i>
             </a>
             <a href="{{ footer_twitter }}" class="footer__link" target="_blank">
-                {{ icons.icon('twitter', 'icon icon--footer') }}
+                <i class="icon--footer icon fab fa-twitter"></i>
             </a>
             <a href="{{ footer_instagram }}" class="footer__link" target="_blank">
-                {{ icons.icon('instagram', 'icon icon--footer') }}
+                <i class="icon--footer icon fab fa-instagram"></i>
             </a>
             <a href="{{ footer_linkedin }}" class="footer__link" target="_blank">
-                {{ icons.icon('linkedin', 'icon icon--footer') }}
+                <i class="icon--footer icon fab fa-linkedin-in"></i>
             </a>
         </div>
     </div>

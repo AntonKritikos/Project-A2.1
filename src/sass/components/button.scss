@@ -21,7 +21,7 @@
         color: $c-prim;
 
         .button__icon {
-            fill: $c-prim;
+            color: $c-prim;
         }
     }
 
@@ -41,10 +41,14 @@
         .button__icon {
             display: inline-block;
             fill: $c-white;
+            font-size: 1.4rem;
             margin: 0 .2rem 0 0;
-            max-height: 25px;
-            max-width: 25px;
             transition: fill .25s;
+            vertical-align: middle;
+
+            &.fa-play {
+                font-size: .7rem;
+            }
         }
     }
 
@@ -57,7 +61,7 @@
             color: $c-second;
 
             .button__icon {
-                fill: $c-second;
+                color: $c-second;
             }
         }
     }
@@ -70,9 +74,12 @@
     @include screen($screen-simple) {
         &__icon-wrapper {
             .button__icon {
+                font-size: 1.5rem;
                 margin: 0 .4rem 0 0;
-                max-height: 28px;
-                max-width: 28px;
+
+                &.fa-play {
+                    font-size: 1rem;
+                }
             }
         }
 
@@ -84,9 +91,12 @@
     @include screen($screen-normal) {
         &__icon-wrapper {
             .button__icon {
+                font-size: 1.8rem;
                 margin: 0 .5rem 0 0;
-                max-height: 30px;
-                max-width: 30px;
+
+                &.fa-play {
+                    font-size: 1.3rem;
+                }
             }
         }
     }
