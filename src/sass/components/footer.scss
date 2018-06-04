@@ -53,6 +53,12 @@
         width: 100%;
     }
 
+    &__button {
+        &--margin {
+            margin: 0 0 .4rem;
+        }
+    }
+
     @include screen($screen-simple) {
         text-align: center;
 
@@ -64,8 +70,12 @@
 
         &__button {
             display: block;
-            margin: 0 auto .4rem;
+            margin: 0 auto;
             max-width: 65%;
+
+            &--margin {
+                margin: 0 auto .4rem;
+            }
         }
     }
 }

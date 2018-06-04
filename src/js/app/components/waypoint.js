@@ -6,7 +6,7 @@ let window_W = window.innerWidth;
 let hide_logo = new Waypoint({
     element: about,
     handler: function() {
-        if ($(window).innerWidth < '768') {
+        if (window_W < '768') {
             if (!$logo.hasClass('is-disabled')) {
                 $logo.addClass('is-disabled');
             } else {
@@ -36,6 +36,6 @@ for (let i = 0; i < $('.innovation').length; i++) {
                 }
             }
         },
-        offset: '40%'
+        offset: '25%'
     });
 }
