@@ -3,6 +3,7 @@
 .innovation {
     background: url('../img/innovation_1.jpg') left center no-repeat fixed $c-grey;
     background-size: cover;
+    box-sizing: content-box;
     height: 100vh;
     overflow: hidden;
     position: relative;

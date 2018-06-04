@@ -25,7 +25,7 @@ $('.button--next').click(function (e) {
 $('.button--to-footer').click(function (e) {
     e.preventDefault();
     $('body, html').animate({
-        scrollTop: $(document).height()
+        scrollTop: $('.footer').offset().top
     }, 500);
     return false;
 });
