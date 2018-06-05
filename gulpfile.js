@@ -22,7 +22,7 @@ gulp.task("default", gulp.series(
         javascript.compileHead,
         javascript.compileLib,
         javascript.compileApp,
-        svg.generateIcons,
+        // svg.generateIcons, No icons in this project
         copy.copyDist
     ),
     gulp.parallel(
@@ -40,22 +40,6 @@ gulp.task("default", gulp.series(
         php.buildPhpFromPages
     ),
     serve.serve
-));
-
-gulp.task("build", gulp.series(
-    clean.clean,
-
-    gulp.parallel(
-        sass.compileSass,
-        javascript.compileHead,
-        javascript.compileLib,
-        javascript.compileApp,
-        svg.generateIcons,
-        copy.copyDist
-    ),
-    gulp.parallel(
-        twig.buildTwig
-    )
 ));
 
 gulp.task("icons", gulp.parallel(
