@@ -1,0 +1,51 @@
+.login {
+    &__container {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+        font-family: 'HuFont', 'Avenir', 'Arial', 'sans-serif';
+    }
+
+    &__logo {
+        height: 125px;
+        overflow: hidden;
+        width: 250px;
+        margin: 0 auto;
+        text-align: center;
+
+        img {
+            margin-top: -62.5px;
+        }
+    }
+
+    &__title {
+        font-weight: 300;
+    }
+
+    &__label {
+        width: 35%;
+        display: inline-block;
+        font-family: 'Avenir', 'Arial', 'sans-serif';
+    }
+
+    &__input {
+        width: calc(65% - 4px);
+        display: inline-block;
+        padding: 5px 10px;
+        font-family: 'Avenir', 'Arial', 'sans-serif';
+        margin-bottom: 10px;
+    }
+
+    &__submit {
+        padding: 5px 30px;
+        background-color: red;
+        color: white;
+        border: none;
+        margin-top: 10px;
+        float: right;
+        font-family: 'Avenir', 'Arial', 'sans-serif';
+        font-size: 1rem;
+    }
+}

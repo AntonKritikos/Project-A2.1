@@ -1,0 +1,101 @@
+.side-nav {
+    max-width: 200px;
+    width: 100%;
+    background-color: $c-prim;
+    height: 80%;
+    overflow-y: auto;
+    display: block;
+    float: left;
+
+    button {
+        padding: 10px 10px;
+    }
+
+    button:focus {
+        outline: 0;
+    }
+}
+
+.side-nav__logo {
+    height: 20%;
+}
+
+.side-nav__logo img {
+    margin-top: -45px;
+}
+
+.side-nav__container {
+    width: 100%;
+}
+
+.side-nav__container > * {
+    padding: 10px 10px;
+}
+
+.side-nav__container * {
+    color: white;
+    width: 100%;
+    display: block;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    font-family: 'HuFont', 'Avenir', 'Arial', 'sans-serif';
+    font-size: 28px;
+}
+
+.side-nav__container a[class$='--active'] {
+    background-color: $c-second;
+}
+
+.side-nav__dropdown > div {
+    background-color: #fd645d;
+    padding-bottom: 6px;
+}
+
+.side-nav__add-page {
+    background-color: $c-second;
+    text-align: center;
+    width: auto;
+    margin: 0 10px;
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.side-nav__container div button:after {
+    content: '▼';
+    font-size: 28px;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-nav__dropdown {
+    transition: 0.5s all;
+    overflow: hidden;
+    padding: 0;
+}
+
+.side-nav__dropdown > div > * {
+    padding: 5px 15px;
+    font-size: 21px
+}
+
+.content-body {
+    width: calc(100% - 200px);
+    float: left;
+    padding-left: 20px;
+    font-family: 'HuFont', 'Avenir', 'Arial', 'sans-serif';
+}
+
+.content-body__title h1 {
+    color: $c-prim;
+    margin: 0;
+    font-size: 3rem;
+}
+
+.content-body__title p {
+    color: $c-black;
+}

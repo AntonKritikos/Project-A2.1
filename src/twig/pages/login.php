@@ -1,10 +1,15 @@
 <div class="form">
-	<img src="/assets/img/hu-logo.svg" alt="Hier komt het HU logo" class="icon">
-	<form action="../../php/login.php" method="post">
-		<h1>Inloggen</h1>
-		Gebruikersnaam <input type="text" name="username" placeholder="Gebruikersnaam">
-		Wachtwoord <input type="password" name="password" placeholder="Wachtwoord">
-		<a href="">Wachtwoord vergeten?</a>
-		<input type="submit" value="Inloggen">
-	</form>
+	<container class="login__container">
+      <div class="login__logo">
+        <img src="./HU-logo.png" alt="">
+      </div>
+      <form class="login__form" action="index.html" method="post">
+        <h1 class="login__title">INLOGGEN</h1>
+        <label class="login__label" for="username">Gebruikersnaam</label>
+        <input class="login__input" type="text" name="username" value="" id="username" placeholder="Gebruikersnaam">
+        <label class="login__label" for="password">Wachtwoord</label>
+        <input class="login__input" type="password" name="username" value="" id="password" placeholder="Wachtwoord">
+        <input class="login__submit" type="submit" name="submit" value="Inloggen">
+      </form>
+    </container>
 </div>
