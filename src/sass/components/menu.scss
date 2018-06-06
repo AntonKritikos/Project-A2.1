@@ -1,6 +1,7 @@
 @import '../mixins/typography';
 
 .menu {
+
     &__shadow {
         background: $c-white;
         border-radius: 100%;
@@ -11,7 +12,7 @@
         right: -300px;
         top: -300px;
         width: 300px;
-        z-index: 2;
+        z-index: 10;
     }
 
     &.is-open {
@@ -79,7 +80,7 @@
         right: 2rem;
         top: 1rem;
         width: 60px;
-        z-index: 5;
+        z-index: 11;
 
         &.is-triggered {
             .menu__bar {
@@ -124,9 +125,9 @@
     &__logo {
         display: block;
         height: 100px;
-        left: 2rem;
+        left: 1rem;
         position: fixed;
-        top: 2rem;
+        top: 1rem;
         width: 100px;
         z-index: 9;
     }
@@ -198,6 +199,13 @@
 
         & > .menu__link {
             display: block;
+        }
+    }
+
+    @include screen($screen-simple) {
+        &__logo {
+            left: 2rem;
+            top: 2rem;
         }
     }
 }
