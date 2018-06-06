@@ -27,7 +27,7 @@
 
     &__text {
         @include style-button;
-        display: inline-block;
+        display: inline;
 
         &--small {
             @include style-button-small;
@@ -36,10 +36,10 @@
 
     &__icon-wrapper {
         @include style-button;
-        display: inline-block;
+        display: inline;
 
         .button__icon {
-            display: inline-block;
+            display: inline;
             fill: $c-white;
             font-size: 1.4rem;
             margin: 0 .2rem 0 0;

@@ -62,6 +62,10 @@
     @include screen($screen-simple) {
         text-align: center;
 
+        &__wrapper {
+            padding: 4rem 2rem;
+        }
+
         &__info {
             display: block;
             margin: 0 auto;
