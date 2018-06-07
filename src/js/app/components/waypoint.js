@@ -3,19 +3,21 @@ const about = document.getElementById('about');
 let content_array = [];
 let window_W = window.innerWidth;
 
-let hide_logo = new Waypoint({
-    element: about,
-    handler: function() {
-        if (window_W < '768') {
-            if (!$logo.hasClass('is-disabled')) {
-                $logo.addClass('is-disabled');
-            } else {
-                $logo.removeClass('is-disabled');
+function logo_handler() {
+    let hide_logo = new Waypoint({
+        element: about,
+        handler: function() {
+            if (window_W < '768') {
+                if (!$logo.hasClass('is-disabled')) {
+                    $logo.addClass('is-disabled');
+                } else {
+                    $logo.removeClass('is-disabled');
+                }
             }
-        }
-    },
-    offset: '30%'
-});
+        },
+        offset: '30%'
+    });
+}
 
 function innovation_handler() {
     for (let i = 0; i < $('.innovation').length; i++) {
@@ -43,9 +45,11 @@ function innovation_handler() {
 }
 
 $(document).ready(function() {
+    logo_handler();
     innovation_handler();
 });
 
 $(window).resize(function(){
+    logo_handler();
     innovation_handler();
 });
