@@ -2,13 +2,13 @@
     max-width: 200px;
     width: 100%;
     background-color: $c-prim;
-    height: 80%;
+    height: 85%;
     overflow-y: auto;
     display: block;
     float: left;
 
     button {
-        padding: 10px 10px;
+        padding: 10px;
     }
 
     button:focus {
@@ -17,11 +17,13 @@
 }
 
 .side-nav__logo {
-    height: 20%;
+    height: 15%;
 }
 
 .side-nav__logo img {
-    margin-top: -45px;
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
 }
 
 .side-nav__container {
@@ -29,7 +31,7 @@
 }
 
 .side-nav__container > * {
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 .side-nav__container * {
@@ -56,8 +58,7 @@
     background-color: $c-second;
     text-align: center;
     width: auto;
-    margin: 0 10px;
-    margin-top: 5px;
+    margin: 5px 10px 0;
     font-size: 22px;
 }
 
@@ -80,7 +81,7 @@ a {
 
 .side-nav__dropdown > div > * {
     padding: 5px 15px;
-    font-size: 21px
+    font-size: 21px;
 }
 
 .content-body {
@@ -88,6 +89,8 @@ a {
     float: left;
     padding-left: 20px;
     font-family: 'HuFont', 'Avenir', 'Arial', 'sans-serif';
+    width: calc(100% - 200px);
+    height: 85%;
 }
 
 .content-body__title h1 {
@@ -98,4 +101,155 @@ a {
 
 .content-body__title p {
     color: $c-black;
+}
+
+.content-body__container {
+    background-color: $c-grey;
+    width: 960px;
+    height: 540px;
+    text-align: center;
+    float: left;
+    display: none;
+    &--header {
+        background-image: url("../img/header_background.jpg");
+        background-size: cover;
+        background-position: center;
+        padding-top: 180px;
+    }
+    input, textarea{
+        font-family: 'HuFont', 'Avenir', 'Arial', 'sans-serif';
+        text-align: center;
+        color: $c-white;
+        &.button{
+            font-size: 1.6rem;
+            padding: 10px 30px;
+            width: auto;
+        }
+        &.transparent{
+            background-color: transparent;
+            border: 0;
+            width: 100%;
+            color: white;
+        }
+        &.subtitle{
+            font-family: 'Avenir', 'Arial', 'sans-serif';
+            font-size: 1.4rem;
+        }
+        &.title{
+            font-size: 3rem;
+            &--red{
+                color: $c-prim;
+            }
+            &--bg-red{
+                background-color: rgba(230, 48, 40, 0.6);
+                border: 0;
+            }
+        }
+        &.content{
+            font-family: 'Avenir', 'Arial', 'sans-serif';
+            font-size: 1rem;
+            text-align: center;
+            word-break: break-word;
+            color: $c-black;
+            height: 100px;
+        }
+    }
+    &--about{
+        padding-top: 140px;
+        .about-wrapper{
+            background-color: $c-white;
+            padding: 40px;
+        }
+        .title{
+            font-size: 2.4rem;
+        }
+    }
+    &--content-1{
+        background-image: url("../img/innovation_1.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    &--footer{
+        .footer-top{
+            background-color: $c-white;
+            padding-bottom: 40px;
+        }
+        .footer-bottom{
+            padding-top: 40px;
+            background-color: $c-grey;
+            img{
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+    &.layout-1{
+        .title{
+            max-width: 400px;
+            font-size: 2.6rem;
+            margin-left: 20px;
+            margin-top: 20px;
+            float: left;
+        }
+        .content-box{
+            position: relative;
+            max-width: 400px;
+            float: right;
+            background-color: $c-white;
+            right: 40px;
+            top: 150px;
+            padding: 10px;
+            .button{
+                margin-top: 10px;
+                width: 100%;
+            }
+            .content{
+                text-align: left;
+            }
+            .subtitle{
+                border: 0;
+                background-color: transparent;
+                color: $c-prim;
+                font-family: 'HuFont', 'Avenir', 'Arial', 'sans-serif';
+                font-size: 2.2rem;
+                text-align: left;
+            }
+        }
+    }
+    &--active{
+        display: block;
+    }
+}
+.content-body__settings{
+    width: 220px;
+    float: left;
+    background-color: $c-grey;
+    padding: 10px;
+    padding-top: 0;
+    margin-left: 10px;
+    font-family: 'Avenir', 'Arial', 'sans-serif';
+    *{
+        width: 100%;
+    }
+    label{
+        margin-top: 10px;
+        display: block;
+    }
+    .menu-label{
+        background-color: $c-white;
+        border: 0;
+        font-size: 0.8rem;
+    }
+    select{
+        background-color: $c-white;
+        border: 0;
+        font-size: 0.8rem;
+        padding: .5rem .6rem;
+    }
+    .button{
+        font-family: 'HuFont', 'Avenir', 'Arial', 'sans-serif';
+        font-size: 1.6rem;
+        padding: 10px;
+        margin-top: 10px;
+    }
 }
