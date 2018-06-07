@@ -17,25 +17,35 @@ let hide_logo = new Waypoint({
     offset: '30%'
 });
 
-for (let i = 0; i < $('.innovation').length; i++) {
-    content_array[i] = document.querySelector('.innovation-' + ([i + 1]));
-    let innovation_waypoint = new Waypoint({
-        element: content_array[i],
-        handler: function() {
-            if (window_W >= '768') {
-                if (!$(content_array[i]).hasClass('is-active')) {
-                    $(content_array[i]).addClass('is-active');
+function innovation_handler() {
+    for (let i = 0; i < $('.innovation').length; i++) {
+        content_array[i] = document.querySelector('.innovation-' + ([i + 1]));
+        let innovation_waypoint = new Waypoint({
+            element: content_array[i],
+            handler: function() {
+                if (window_W >= '768') {
+                    if (!$(content_array[i]).hasClass('is-active')) {
+                        $(content_array[i]).addClass('is-active');
+                    } else {
+                        $(content_array[i]).removeClass('is-active');
+                    }
                 } else {
-                    $(content_array[i]).removeClass('is-active');
+                    if (!$(content_array[i]).hasClass('is-active--mobile')) {
+                        $(content_array[i]).addClass('is-active--mobile');
+                    } else {
+                        $(content_array[i]).removeClass('is-active--mobile');
+                    }
                 }
-            } else {
-                if (!$(content_array[i]).hasClass('is-active--mobile')) {
-                    $(content_array[i]).addClass('is-active--mobile');
-                } else {
-                    $(content_array[i]).removeClass('is-active--mobile');
-                }
-            }
-        },
-        offset: '25%'
-    });
+            },
+            offset: '25%'
+        });
+    }
 }
+
+$(document).ready(function() {
+    innovation_handler();
+});
+
+$(window).resize(function(){
+    innovation_handler();
+});
