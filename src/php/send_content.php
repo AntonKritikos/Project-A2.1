@@ -1,4 +1,5 @@
 <?php
+echo "TEst";
 require 'config/config.php';
 require 'config/dbconnect.php';
 	$title = $mysqli->real_escape_string($_POST['title']);
@@ -36,9 +37,12 @@ require 'config/dbconnect.php';
 				$errors[] = 'Verkeerde dimensies gebruikt. Het bestand mag maximaal 800 pixels hoog zijn en 800 pixels breed.';
 			}
 
+			var_dump($errors);
+
 		    if(count($errors) === 0)
 		    {
 				$sql = ("INSERT INTO innovations (title, title_color, subtitle, subtitle_color, content, background_color, background_image, button_text, button_link, button_align) VALUES ('$title', '$title_color', '$subtitle', '$subtitle_color', '$content', '$background_color', '$destination', '$button_text', '$button_link', '$button_align')");
+				var_dump($sql);
 			    $results = $mysqli->query($sql);
 			    echo "Met succes geupload";
 			    echo "<a href='../twig/pages/admin.twig'>Ga terug</a>";
@@ -53,6 +57,8 @@ require 'config/dbconnect.php';
 	else
 	{
 		$result = $mysqli->query("INSERT INTO innovations (title, title_color, subtitle, subtitle_color, content, background_color, button_text, button_link, button_align) VALUES ('$title', '$title_color', '$content', '$background_color', '$button_text', '$button_link', '$button_align'");
+		var_dump($result);
+
 		?>
 		<div class="succes">
 			<p>Het stuk is succesvol toegevoegd</p>
