@@ -1,7 +1,7 @@
 <?php
 $list = array();
 
-$result = $mysqli->query("SELECT * FROM layout");
+$result = $mysqli->query("SELECT * FROM innovations");
 
 while ($item = $result->fetch_assoc())
 {

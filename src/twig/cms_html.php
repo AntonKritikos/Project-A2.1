@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <title></title>
-  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
 </head>
 
 <body>
   <div class="side-nav__logo">
-    <img src="./img/hu-logo.svg" alt="HU-Logo">
+    <img src="assets/img/hu-logo.svg" alt="HU-Logo">
   </div>
   <container class="side-nav">
     <div class="side-nav__container">
@@ -61,7 +60,7 @@
         <input type="text" name="button-2" value="meer over leraar techniek" class="button button--blue">
       </div>
       <div class="footer-bottom">
-        <img src="./img/hu-logo.svg" alt="HU-Logo">
+        <img src="assets/img/hu-logo.svg" alt="HU-Logo">
           <div class="footericons">
             <a href="https://www.facebook.com/HogeschoolUtrecht/" class="footerlink" target="_blank">
                 <i class="icon--footer icon fab fa-facebook-f"></i>
