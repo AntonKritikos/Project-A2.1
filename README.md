@@ -1,6 +1,6 @@
 # Campagne Hogeschool Utrecht 
 ### Leraar techniek tweedegraads
-#### By group A2.1
+#### By Idris Dopico Peña
 
 ##### Introduction
 In this readme you can find how you put the project on your local computer and run it.
