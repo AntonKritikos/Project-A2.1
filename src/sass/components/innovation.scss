@@ -108,28 +108,35 @@
     }
 
     &--half.innovation {
+        height: 80vh;
+
         .innovation__background {
-            background: linear-gradient(top, transparentize($c-black, .6), transparentize($c-white, .4)),
+            background: linear-gradient(top, transparentize($c-black, .75), $c-grey),
             url('../img/innovation_2.jpg') center top no-repeat scroll;
             background-size: cover;
-            height: 50%;
+            height: 75%;
         }
 
         .innovation__container {
+            bottom: 0;
             padding: 0;
             position: absolute;
         }
 
+        .innovation__wrapper {
+            margin: 0 1rem;
+        }
+
         .innovation__heading {
             background: none;
-            padding: 0;
+            padding: 0 1rem;
         }
 
         .innovation__white {
             background: $c-grey;
             bottom: 0;
             display: block;
-            height: 50%;
+            height: 25%;
             left: 0;
             position: absolute;
             width: 100%;
@@ -180,10 +187,11 @@
         }
 
         &--half.innovation {
+            height: 70vh;
+
             .innovation__background {
-                background: linear-gradient(top, transparentize($c-black, .6), transparentize($c-white, .4)),
-                url('../img/innovation_2.jpg') bottom center no-repeat scroll;
-                background-size: cover;
+                background: url('../img/innovation_2.jpg') bottom center no-repeat fixed;
+                background-size: 150%;
                 height: 100%;
             }
 
@@ -202,7 +210,7 @@
                 max-width: 50%;
                 padding: 0;
                 position: absolute;
-                text-align: right;
+                text-align: left;
                 top: 0;
 
                 .innovation__title {
@@ -213,7 +221,7 @@
                 .innovation__subtitle {
                     background: transparentize($c-prim, .4);
                     float: right;
-                    max-width: 40%;
+                    max-width: 60%;
                     padding: .5rem;
                 }
             }
@@ -269,7 +277,7 @@
         &--half.innovation {
             .innovation__background {
                 background: url('../img/innovation_2.jpg') bottom center no-repeat scroll $c-grey;
-                background-size: cover;
+                background-size: 130%;
                 height: 100%;
             }
         }
