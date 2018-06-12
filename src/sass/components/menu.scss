@@ -162,7 +162,7 @@
     &__list {
         display: block;
         opacity: 0;
-        padding: 0 1.5rem;
+        padding: 0 1rem;
         pointer-events: none;
         position: absolute;
         top: 50%;
@@ -191,12 +191,12 @@
 
     &__information {
         @include style-regular;
-        bottom: 2rem;
+        bottom: 1rem;
         color: $c-white;
         display: block;
         font-family: $font-prim;
         font-size: .8rem;
-        left: 1.5rem;
+        left: 1rem;
         position: absolute;
 
         & > .menu__link {
@@ -208,6 +208,15 @@
         &__logo {
             left: 2rem;
             top: 2rem;
+        }
+
+        &__list {
+            padding: 0 2rem;
+        }
+
+        &__information {
+            bottom: 2rem;
+            left: 2rem;
         }
     }
 }
